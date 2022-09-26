@@ -6,9 +6,8 @@
 	right: 0;
 	z-index: 123123;
 	padding: 0;
-	background: $f;
+	background: transparent;
 	
-
 	&.act {
 		background-color: Rgb(255 255 255 / 90%);
 		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
@@ -20,7 +19,7 @@
 	}
 
 	&:hover {
-		background-color: $f;
+		// background-color: $f;
 	}
 
 	&.activemenu {
@@ -67,18 +66,24 @@
 		}
 
 		div.logo {
-			margin: 0 auto;
+			margin: 0 30px;
 			position: relative;
 			padding: 20px 0 0;
-			max-width: 200px;
+			// max-width: 200px;
 
 			@media screen and (max-width: 992px) {
 				margin: 0 auto 0 0;
 				padding-left: 0;
 			}
+
+
 			.link-logo {
 				// margin-left: 10px;
 				// display: inline-flex;
+
+				&:hover {
+					opacity: 1;
+				}
 			}
 
 			figure.logo {
