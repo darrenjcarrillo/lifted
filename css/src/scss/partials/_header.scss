@@ -67,8 +67,12 @@
 		}
 
 		div.logo {
-			margin: 0 30px;
+			margin: 0 15px;
 			position: relative;
+
+      @include isXLarge {
+        margin: 0 30px;
+      }
 
 
 			@media screen and (max-width: 992px) {
@@ -245,16 +249,22 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          margin: 0 30px;
+          margin: 0 50px 0 0;
           background: $color-secondary;
-          padding: 13px;
+          width: 50px;
+          height: 50px;
           border-radius: 50%;
 
+          @include isXLarge {
+            margin: 0 100px 0 0;
+          }
+
           .search-link {
-            width: 25px;
-            height: 25px; 
+            width: 20px;
+            height: 20px; 
           }
         }
+
 				@media screen and (max-width: 992px) {
 					display: flex;
 					margin: 0 auto;
@@ -271,6 +281,7 @@
 				width: 100%;
 				padding: 0;
 				position: relative;
+        align-items: center;
 
 				@media screen and (max-width: 992px) {
 					flex-direction: column;
@@ -329,6 +340,7 @@
 					&.blue-text {
 						a.menulink {
 							color: #000;
+              margin-right: 0;
 						}
 					}
 
