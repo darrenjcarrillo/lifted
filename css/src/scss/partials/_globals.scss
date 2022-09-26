@@ -1,35 +1,6 @@
-html {
-box-sizing: border-box;
-}
-*, *:before, *:after {
-box-sizing: inherit;
-}
-
-body {
-    color: $b;
-    // overflow-x: hidden;
-}
-
 .container {
-    max-width: 1500px;
-    @media screen and (max-width: 992px) {
-    }
-}
-
-.tma-main {
-    width: 100%;
-}
-
-.site-img {
-    width: 100%;
-    height: auto;
-
-    &--aesthetic {
-        max-width: 475px;
-    }
-
-    &--health {
-        max-width: 400px;
-    }
+  max-width: 1500px;
+  @media screen and (max-width: 992px) {
+  }
 }
 

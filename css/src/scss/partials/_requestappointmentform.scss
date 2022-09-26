@@ -1,76 +1,112 @@
-.input {
-  margin-bottom: 20px;
-  border-bottom: 3px solid #000;
+// Request Appointment Form
+
+// Input styles
+@mixin selectStyles {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 100%;
+  text-align: left;
+
+  box-shadow: none;
+
+  border-radius: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  height: auto;
+  text-transform: capitalize;
+  border: none;
+
+  background-color: $f;
+
+  margin-top: 10px;
+
+  padding: 15px 12px;
+  line-height: 20px;
+
+
+  font-size: 16px;
+  color: #4d90ff;
+  letter-spacing: 0em;
+
+
+}
+
+@mixin placeholderText {
+  color: rgba($color: #515252, $alpha: 1);
+  font-style: normal;
+
+  line-height: 30px;
+  font-size: 14px;
+  color: rgba(123,123,123,1);
+
+
+  font-weight: Regular;
+  font-size: 16px;
+  color: #4d90ff;
+  letter-spacing: 0em;
+  line-height: 1.875;
+
 }
 
 input.form-control {
-  width: 100%;
-  padding: 10px 0;
-  background: transparent;
-  border: none;
-  font-family: $font-primary;
-  color: #000;
-  font-size: 16px;
-  
-
-  @include isRetina {
-    font-size: 20px;
-  }
-
+  @include selectStyles;
 
   &::placeholder {
-    color: #000;
+    @include placeholderText;
   }
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 11px 7px rgba(0, 0, 0, 0.11);
+    color: #515252;
     border-radius: 3px;
-  }
-}
 
-input.form-control2 {
-  background-image: url('http://urgelabs.com/dev/static/turner-medical/img/right-icon.svg');
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 10px;
+    &::placeholder {
+      color: #515252;
+    }
+  }
 }
 
 select.form-control {
-  width: 100%;
-  padding: 10px 0;
-  background: transparent;
-  border: none;
-  font-family: $font-primary;
-  color: #000;
-  font-size: 16px;
-  -moz-appearance:none; /* Firefox */
-  -webkit-appearance:none; /* Safari and Chrome */
-  appearance:none;
-  background-image: url('/img/right-icon.svg');
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 10px;
-
-
-
-  @include isRetina {
-    font-size: 20px;
+  background: transparent
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23000000' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
+    no-repeat right 0.75rem center/8px 10px;
+  @include selectStyles;
+  text-transform: capitalize;
+  option {
+    text-transform: capitalize;
   }
 
   &::placeholder {
-    color: #000;
+    @include placeholderText;
   }
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 11px 7px rgba(0, 0, 0, 0.11);
+    color: #515252;
     border-radius: 3px;
+    &::placeholder {
+      color: #515252;
+    }
   }
 }
 
-.f-submit {
-  button {
-    font-family: $font-secondary;
+textarea.form-control {
+  @include selectStyles;
+
+  &::placeholder {
+    @include placeholderText;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 11px 7px rgba(0, 0, 0, 0.11);
+    color: #515252;
+    border-radius: 3px;
+    &::placeholder {
+      color: #515252;
+    }
   }
 }

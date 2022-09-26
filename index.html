@@ -1,1092 +1,544 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head itemscope itemtype="http://schema.org/WebSite">
-        <meta charset="UTF-8" />
 
-        <title>Lifted</title>
+<head itemscope itemtype="http://schema.org/WebSite">
+    <meta charset="UTF-8" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="author" content="" />
+    <title>Title</title>
 
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-        <link rel="pingback" href="/xmlrpc.php" />
-        <link rel="shortcut icon" type="image/ico" href="img/favicon-16x16.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="" />
 
-        <meta name="robots" content="noindex,nofollow" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="/xmlrpc.php" />
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 
-        <link rel="dns-prefetch" href="//s.w.org" />
-        <link rel="https://api.w.org/" href="/wp-json/" />
-        <link rel="canonical" href="/" />
-        <link rel="shortlink" href="/" />
-        <!-- <link rel="icon" href="img/favicon.ico" /> -->
-        
-        <!-- WPHEAD -->
-        <!-- Main Styles -->
-        <link rel="stylesheet" href="public/frontend.css">
-        <link rel="stylesheet" href="https://use.typekit.net/vvv0zzy.css">
-        <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-        />
-    </head>
-    <body class="home" id="top" itemscope itemtype="http://schema.org/WebPage">
-        <!-- header -->
-        <header id="header-container">
-            <section class="nav-container">
-                <!-- <div class="logo">
-                    <figure class="logo">
-                        <a href="<?= get_site_url(); ?>/" class="link-logo">
-                            <picture>
-                                <source type="image/svg+xml" srcset="img/lifted-logo.svg">
-                                <img src="img/lifted-logo.svg" alt="Lifted" class="" width="174" height="58">
-                            </picture>
-                        </a>
-                    </figure>
-                </div> -->
-                <nav class="navdiv" aria-label="main navigation" role="navigation">
-                    <span class="closebutton menu-button">
-                        <div class="bars" aria-label="menu" aria-haspopup="true" aria-expanded="false" tabindex="0"
-                            aria-label="open menu">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                    </span>
-                    <div class="navbaritems ">
-                        <div class="menucontent">
-                            <ul class="items" role="menubar">
+    <meta name="robots" content="noindex,nofollow" />
+
+    <link rel="dns-prefetch" href="//s.w.org" />
+    <link rel="https://api.w.org/" href="/wp-json/" />
+    <link rel="canonical" href="/" />
+    <link rel="shortlink" href="/" />
+    <link rel="icon" href="img/favicon.ico" />
+
+    <!-- WPHEAD -->
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="public/frontend.css">
+    <link rel="stylesheet" href="public/frontend.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vvv0zzy.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+</head>
+
+<body class="home" id="top" itemscope itemtype="http://schema.org/WebPage">
+
+    <!-- header -->
+    <header id="header-container">
+        <section class="nav-container">
+            <!-- <div class="logo">
+                <figure class="logo">
+                    <a href="<?= get_site_url(); ?>/" class="link-logo">
+                        <picture>
+                            <source type="image/svg+xml" srcset="img/turner-medical-arts-logo.svg">
+                            <img src="img/turner-medical-arts-logo.svg" alt="Turner Medical Arts" class="" width="174" height="58">
+                        </picture>
+                    </a>
+                </figure>
+            </div> -->
+            <nav class="navdiv" aria-label="main navigation" role="navigation">
+                <span class="closebutton menu-button">
+                    <div class="bars" aria-label="menu" aria-haspopup="true" aria-expanded="false" tabindex="0"
+                        aria-label="open menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </span>
+                <div class="navbaritems ">
+                    <div class="menucontent">
+                        <ul class="items" role="menubar">
+                            <!-- menu item -->
+                            <li role="menuitem" class="menu-item hasdropdown ">
+                                <a href="<?= get_site_url(); ?>/about/" class="menulink">
+                                    <span class="menutext">
+                                      ABOUT US
+                                    </span>
+                                </a>
+                                <div class="dropmenu norm">
+                                <ul class="dropmenuitems order-1" aria-hidden="true">
+                                    <li role="menuitem" class="menu-item">
+                                        <a href="<?= get_site_url(); ?>/providers/" class="menulink">Providers</a>
+                                    </li>
+                                    <li role="menuitem" class="menu-item">
+                                        <a href="<?= get_site_url(); ?>/careers/" class="menulink">Careers</a>
+                                    </li>
+                                    <li role="menuitem" class="menu-item">
+                                        <a href="<?= get_site_url(); ?>/about/patient-information/" class="menulink">Patient Information</a>
+                                    </li>
+                                    <li role="menuitem" class="menu-item">
+                                        <a href="<?= get_site_url(); ?>/about/patient-information/financing/" class="menulink">Financing</a>
+                                    </li>
+                                    <li role="menuitem" class="menu-item">
+                                        <a href="<?= get_site_url(); ?>/about/patient-information/patient-forms/" class="menulink">Patient Forms</a>
+                                    </li>
+                                    <li role="menuitem" class="menu-item">
+                                        <a href="<?= get_site_url(); ?>/about/patient-information/patient-testimonials/" class="menulink">Patient Testimonials</a>
+                                    </li>
+                                    <li role="menuitem" class="menu-item">
+                                        <a href="<?= get_site_url(); ?>/about/patient-information/practice-policies/" class="menulink">Practice Policies</a>
+                                    </li>
+                                                </ul>
+
+                                </div>
+                            </li>
+                            <!-- menu item -->
+                            <li role="menuitem" class="menu-item hasdropdown ">
+                                <a href="<?= get_site_url(); ?>/aesthetics/" class="menulink">
+                                    <span class="menutext">
+                                        CONCERNS
+                                    </span>
+                                </a>
+                                <div class="dropmenu norm">
+                                    <ul class="dropmenuitems order-1" aria-hidden="true">
+                                        <li role="menuitem" class="menu-item">
+                                            <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
+                                        </li>
+                                        <li role="menuitem" class="menu-item">
+                                        <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
+                                        </li>
+                                        <li role="menuitem" class="menu-item">
+                                        <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
+                                        </li>
+                                        <li role="menuitem" class="menu-item">
+                                        <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
                                 <!-- menu item -->
-                                <li role="menuitem" class="menu-item hasdropdown ">
-                                    <a href="<?= get_site_url(); ?>/about/" class="menulink">
+                            <li role="menuitem" class="menu-item hasdropdown ">
+                                    <a href="<?= get_site_url(); ?>/plastic-surgery/" class="menulink">
+                                    <span class="menutext">
+                                        TREATMENTS
+                                    </span>
+                                </a>
+                                <div class="dropmenu norm">
+                                    <div class="dropmenu norm">
+                                    <ul class="dropmenuitems order-1" aria-hidden="true">
+                                        <li role="menuitem" class="menu-item">
+                                            <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
+                                        </li>
+                                        <li role="menuitem" class="menu-item">
+                                            <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
+                                        </li>
+                                        <li role="menuitem" class="menu-item">
+                                            <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
+                                        </li>
+                                        <li role="menuitem" class="menu-item">
+                                            <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
+                                        </li>
+                                    </ul>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <!-- menu item -->
+                            <li role="menuitem" class="menu-item">
+                              <a href="<?= get_site_url(); ?>/gyn-sexual-health/" class="menulink">
+                                    <span class="menutext">
+                                        SHOP
+                                    </span>
+                                </a>
+                            </li>
+
+                            <div class="logo">
+                              <figure class="logo">
+                                  <a href="<?= get_site_url(); ?>/" class="link-logo">
+                                      <picture>
+                                          <source type="image/svg+xml" srcset="img/lifted-logo.svg">
+                                          <img src="img/lifted-logo.svg" alt="Turner Medical Arts" class="" width="174" height="58">
+                                      </picture>
+                                  </a>
+                              </figure>
+                            </div>
+
+                            <!-- menu item -->
+                            <li role="menuitem" class="menu-item hasdropdown ">
+                                <a href="<?= get_site_url(); ?>/concerns/" class="menulink">
                                         <span class="menutext">
-                                            ABOUT US
+                                            BLOGS
                                         </span>
                                     </a>
                                     <div class="dropmenu norm">
                                     <ul class="dropmenuitems order-1" aria-hidden="true">
                                         <li role="menuitem" class="menu-item">
-                                            <a href="<?= get_site_url(); ?>/providers/" class="menulink">Providers</a>
-                                        </li>
-                                        <li role="menuitem" class="menu-item">
-                                            <a href="<?= get_site_url(); ?>/careers/" class="menulink">Careers</a>
-                                        </li>
-                                        <li role="menuitem" class="menu-item">
-                                            <a href="<?= get_site_url(); ?>/about/patient-information/" class="menulink">Patient Information</a>
-                                        </li>
-                                        <li role="menuitem" class="menu-item">
-                                            <a href="<?= get_site_url(); ?>/about/patient-information/financing/" class="menulink">Financing</a>
-                                        </li>
-                                        <li role="menuitem" class="menu-item">
-                                            <a href="<?= get_site_url(); ?>/about/patient-information/patient-forms/" class="menulink">Patient Forms</a>
-                                        </li>
-                                        <li role="menuitem" class="menu-item">
-                                            <a href="<?= get_site_url(); ?>/about/patient-information/patient-testimonials/" class="menulink">Patient Testimonials</a>
-                                        </li>
-                                        <li role="menuitem" class="menu-item">
-                                            <a href="<?= get_site_url(); ?>/about/patient-information/practice-policies/" class="menulink">Practice Policies</a>
-                                        </li>
-                                                    </ul>
-
-                                    </div>
-                                </li>
-                                <!-- menu item -->
-                                <li role="menuitem" class="menu-item hasdropdown ">
-                                    <a href="<?= get_site_url(); ?>/aesthetics/" class="menulink">
-                                        <span class="menutext">
-                                            CONCERNS
-                                        </span>
-                                    </a>
-                                    <div class="dropmenu norm">
-                                      <ul class="dropmenuitems order-1" aria-hidden="true">
-                                          <li role="menuitem" class="menu-item">
-                                              <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
-                                          </li>
-                                          <li role="menuitem" class="menu-item">
                                             <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
-                                          </li>
-                                          <li role="menuitem" class="menu-item">
+                                        </li>
+                                        <li role="menuitem" class="menu-item">
                                             <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
-                                          </li>
-                                          <li role="menuitem" class="menu-item">
+                                        </li>
+                                        <li role="menuitem" class="menu-item">
                                             <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
-                                          </li>
-                                      </ul>
+                                        </li>
+                                        <li role="menuitem" class="menu-item">
+                                            <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
+                                        </li>
+                                    </ul>
                                     </div>
-                                </li>
- 
-                                 <!-- menu item -->
-                                <li role="menuitem" class="menu-item hasdropdown ">
-                                        <a href="<?= get_site_url(); ?>/plastic-surgery/" class="menulink">
-                                        <span class="menutext">
-                                            TREATMENTS
-                                        </span>
-                                    </a>
-                                    <div class="dropmenu norm">
-                                      <div class="dropmenu norm">
-                                        <ul class="dropmenuitems order-1" aria-hidden="true">
-                                            <li role="menuitem" class="menu-item">
-                                                <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
-                                            </li>
-                                            <li role="menuitem" class="menu-item">
-                                              <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
-                                            </li>
-                                            <li role="menuitem" class="menu-item">
-                                              <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
-                                            </li>
-                                            <li role="menuitem" class="menu-item">
-                                              <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
-                                            </li>
-                                        </ul>
-                                      </div>
+                            </li>
 
-                                    </div>
-                                </li>
+                            <!-- menu item -->
+                            <li role="menuitem" class="menu-item ">
+                            <a href="<?= get_site_url(); ?>/gallery/" class="menulink">
+                                <span class="menutext">
+                                    MEMBERSHIPS
+                                </span>
+                            </a>
+                            </li>
 
-                                <!-- menu item -->
-                                <li role="menuitem" class="menu-item">
-                                <a href="<?= get_site_url(); ?>/gyn-sexual-health/" class="menulink">
-                                        <span class="menutext">
-                                            SHOP
-                                        </span>
-                                    </a>
-                                </li>
-
-                                <!-- Logo -->
-                                <div class="logo">
-                                  <figure class="logo">
-                                      <a href="<?= get_site_url(); ?>/" class="link-logo">
-                                          <picture>
-                                              <source type="image/svg+xml" srcset="img/lifted-logo.svg">
-                                              <img src="img/lifted-logo.svg" alt="Lifted" class="" width="174" height="58">
-                                          </picture>
-                                      </a>
-                                  </figure>
-                                </div>
-
-                                <!-- menu item -->
-                                <li role="menuitem" class="menu-item hasdropdown ">
-                                  <a href="<?= get_site_url(); ?>/concerns/" class="menulink">
-                                          <span class="menutext">
-                                              BLOGS
-                                          </span>
-                                      </a>
-                                      <div class="dropmenu norm">
-                                        <ul class="dropmenuitems order-1" aria-hidden="true">
-                                            <li role="menuitem" class="menu-item">
-                                                <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
-                                            </li>
-                                            <li role="menuitem" class="menu-item">
-                                              <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
-                                            </li>
-                                            <li role="menuitem" class="menu-item">
-                                              <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
-                                            </li>
-                                            <li role="menuitem" class="menu-item">
-                                              <a href="<?= get_site_url(); ?>/test/" class="menulink">TEST</a>
-                                            </li>
-                                        </ul>
-                                      </div>
-                                </li>
-
-                                <!-- menu item -->
-                                <li role="menuitem" class="menu-item ">
-                                <a href="<?= get_site_url(); ?>/gallery/" class="menulink">
+                            <!-- menu item -->
+                            <li role="menuitem" class="menu-item ">
+                                <a href="<?= get_site_url(); ?>/shop/" class="menulink">
                                     <span class="menutext">
-                                        MEMBERSHPS
+                                      THE STUDIO
                                     </span>
                                 </a>
-                                </li>
+                            </li>
 
-                                <!-- menu item -->
-                                <li role="menuitem" class="menu-item ">
-                                  <a href="<?= get_site_url(); ?>/shop/" class="menulink">
-                                      <span class="menutext">
-                                          THE STUDIO
-                                      </span>
-                                  </a>
-                                </li>
-
-
-                                <!-- menu item -->
-                                <li role="menuitem" class="menu-item blue-text">
-                                    <a href="<?= get_site_url(); ?>/request-appointment/" class="menulink">
-                                        <span class="menutext">
-                                            REQUEST APPOINTMENT
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                            <!-- menu item -->
+                            <li role="menuitem" class="menu-item blue-text">
+                                <a href="<?= get_site_url(); ?>/request-appointment/" class="menulink">
+                                    <span class="menutext">
+                                        REQUEST APPOINTMENT
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
-            </section>
-        </header>
-        <!-- header -->
-
-        <!-- MAIN CONTENT -->
-        <main role="main" class="tma-main">
-
-            <section class="intro">
-              <div class="img">
-                <picture>
-                  <source media="(min-width: 576px)" srcset="img/welcome@2x.jpg">
-                  <img src="img/welcome@2x.jpg" alt="" class="pic">
-                </picture>
-              </div>
-
-              <div class="container">
-                <div class="content">
-                  <div class="rvl">
-                    <h1 class="sec-title">
-                      Care You 
-                      Can Count
-                    </h1>
-                  </div>
-
-                  <div class="rvl">
-                    <p>
-                      From dermal fillers to facials and peels, the anti-aging services offered at Lifted are designed to
-                      offer personalized care for those looking to enhance their look. If you’re ready for a change, give us a call.
-                    </p>
-                  </div>
-
-                  <div class="ui-btn__container">
-                    <a href="" class="ui-btn ui-btn--sm">
-                        Schedule Appointment
-                    </a>
-                  </div>
-
-
-                  
                 </div>
-              </div>
+            </nav>
+        </section>
+    </header>
+    <!-- header -->
 
-              <div class="intro__right tma-column">
-                <h2 class="section-subtitle section-subtitle--intro">Medical</h2>
-              </div>
+    <!-- MAIN CONTENT -->
+    <main role="main" class="main">
 
-
-            </section>
-
-            <section class="aesthetic">
-              <div class="img">
-                <picture>
-                  <source media="(min-width: 576px)" srcset="img/aesthetic-section-bg.jpg">
-                  <img src="img/aesthetic-section-bg.jpg" alt="" class="pic">
-                </picture>
-              </div>
-              <div class="container">
-                <div class="content">
-                  <div class="col-content">
-                    <div class="img-container">
-                      <div class="image-wrap">
-                        <h3 class="section-subtitle section-subtitle--aesthetic">Beauty</h3> 
-                        <img src="img/aesthetic-section-portrait.png" alt="" class="pic">
-                      </div>
-                      <!-- <picture>
-                        <source media="(min-width: 576px)" srcset="img/aesthetic-section-portrait.png">
-                       
-                      </picture> -->
-                    </div>
-                  </div>
-                  <div class="col-content">
-                    <div class="rvl">
-                      <h2 class="sec-title">
-                        Aesthetics
-                      </h2>
-                    </div>
-
-                    <div class="rvl">
-                      <p>Beauty begins with care. At Lifted, we offer a wide selection of aesthetic options, delivering each with care to ensure you get the beautiful results you deserve. Get in touch to find your ideal treatment.</p>
-                    </div>
-                    
-                    <div class="content-links rvl">
-                      <a class="content-link" href="">Injectables 
-                        <span class="link-icon">
-                          <img src="img/right-icon.svg" alt="right icon">                      
-                        </span>
-                      </a>
-                      <a class="content-link" href="">morpheus8
-                        <span class="link-icon">
-                          <img src="img/right-icon.svg" alt="right icon">                      
-                        </span>
-                      </a>
-                      <a class="content-link" href="">Facial Rejuvenation
-                        <span class="link-icon">
-                          <img src="img/right-icon.svg" alt="right icon">                      
-                        </span>
-                      </a>
-                      <a class="content-link" href="">Hair loss
-                        <span class="link-icon">
-                          <img src="img/right-icon.svg" alt="right icon">                      
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="ui-btn__container">
-                      <a href="" class="ui-btn ui-btn--sm">
-                          Schedule Appointment
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section class="surgery">
-              <div class="img">
-                <picture>
-                  <source media="(min-width: 576px)" srcset="img/plastic-surgery-bg.jpg">
-                  <img src="img/plastic-surgery-bg.jpg" alt="" class="pic">
-                </picture>
-              </div>
-              <div class="container">
-                <div class="content">
-                  <div class="col-content">
-                    <h3 class="section-subtitle section-subtitle--surgery">Sculpt</h3> 
-                  </div>
-
-                  <div class="col-content">
-                    <div class="logo-bg">
-                      <img src="img/logo-white.png" alt="">
-                    </div>
-
-                    <div class="rvl">
-                      <h2 class="sec-title">
-                        Plastic Surgery
-                      </h2>
-                    </div>
-
-                    <div class="rvl">
-                      <p>Reinvent your look and let your inner essence shine at Lifted. Whether you want a tummy tuck or a breast augmentation, we’re ready to work with you to help you meet your goals. Schedule a consult today.</p>
-                    </div>
-                    
-                    <div class="content-links rvl">
-                      <a class="content-link" href="">Body Sculpting 
-                        <span class="link-icon">
-                          <img src="img/right-icon-white.svg" alt="right icon">                      
-                        </span>
-                      </a>
-                      <a class="content-link" href="">Breast Reduction
-                        <span class="link-icon">
-                          <img src="img/right-icon-white.svg" alt="right icon">                      
-                        </span>
-                      </a>
-                      <a class="content-link" href="">BBL
-                        <span class="link-icon">
-                          <img src="img/right-icon-white.svg" alt="right icon">                      
-                        </span>
-                      </a>
-                      <a class="content-link" href="">360 Lipo Mommy Makeover
-                        <span class="link-icon">
-                          <img src="img/right-icon-white.svg" alt="right icon">                      
-                        </span>
-                      </a>
-                      <a class="content-link" href="">Breast Lift
-                        <span class="link-icon">
-                          <img src="img/right-icon-white.svg" alt="right icon">                      
-                        </span>
-                      </a>
-                    </div>
-
-                    <div class="ui-btn__container">
-                      <a href="" class="ui-btn ui-btn--sm ui-btn-white">
-                          Schedule Appointment
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section class="sexual-health">
-              <div class="img">
-                <picture>
-                  <source media="(min-width: 576px)" srcset="img/sexual-health-bg.jpg">
-                  <img src="img/sexual-health-bg.jpg" alt="" class="pic">
-                </picture>
-              </div>
-              <div class="container">
-                <div class="content">
-                  <div class="col-content">
-                    <div class="rvl">
-                      <h2 class="sec-title">
-                        Gynecology & Sexual Health
-                      </h2>
-                    </div>
-
-                    <div class="rvl">
-                      <p>The next evolution of intimate health begins here. As a skilled gynecologist, Dr. Duncan Turner is proud to provide you with the latest treatments created to help you get the care you deserve. Get in touch to learn more.</p>
-                    </div>
-                    
-                    <div class="content-links rvl">
-                      <div class="top-col">
-                        <a class="content-link" href="">MonaLisa Touch<sup>®</sup> & ThermiVa<sup>®</sup>
-                          <span class="link-icon">
-                            <img src="img/right-icon-white.svg" alt="right icon">                      
-                          </span>
-                        </a>
-                        <a class="content-link" href="">labiaplasty
-                          <span class="link-icon">
-                            <img src="img/right-icon-white.svg" alt="right icon">                      
-                          </span>
-                        </a>
-                      </div>
-                      <div class="bottom-col">
-                        <a class="content-link bio-link" href="">bioidentical hormone replacement therapy
-                          <span class="link-icon">
-                            <img src="img/right-icon-white.svg" alt="right icon">                      
-                          </span>
-                        </a>
-                        <a class="content-link" href="">Morpheus Vaginal Treatments
-                          <span class="link-icon">
-                            <img src="img/right-icon-white.svg" alt="right icon">                      
-                          </span>
-                        </a>
-                      </div>
-                      </div>
-
-                    <div class="ui-btn__container">
-                      <a href="" class="ui-btn ui-btn--sm ui-btn-white">
-                          Schedule Appointment
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-content">
-                    <div class="img-container">
-                      <div class="image-wrap">
-                        <h3 class="section-subtitle section-subtitle--s-health">RADIANT</h3> 
-                        <img src="img/sexual-health-hero.jpg" alt="" class="pic">
-                      </div>
-                      <!-- <picture>
-                        <source media="(min-width: 576px)" srcset="img/aesthetic-section-portrait.png">
-                       
-                      </picture> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            
-            <section class="tma-team">
-              <div class="container">
-                <div class="content">
-                  <div class="logo-wrapper rvl">
-                    <img src="./img/logo.svg" alt="Logo" class="staff__img">
-                  </div>
-                
-                  <div class="rvl">
-                    <h2 class="sec-title">
-                      The TMA Difference
-                    </h2>
-                  </div>
-
-                  <div class="rvl">
-                    <p>
-                      Our professional team at Lifted is here to provide you with the sexual health, aesthetics, and plastic surgery expertise you deserve. Expert medical care delivered with kindness is our promise to you.
-                    </p>
-                  </div>
-
-                  <div class="swiper-container">
-                    <!-- Swiper -->
-                    <div class="swiper mySwiper">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <div class="img-container">
-                            <img src="img/duncan.jpg" alt="">
-                          </div>
-
-                          <div class="text-content">
-                            <div>
-                              <h3 class="sec-title">
-                                Dr. Turner.
-                              </h3>
-                            </div>
-          
-                            <div >
-                              <p>
-                                Lifted is on a wonderful journey. I would like to take this opportunity to tell you where we have been as a basis of where we are now and intending to go.It really goes back to my decision to become a doctor which occurred many moons ago at the age of 13. The first time I was able to view a surgery was in high school and I knew then I wanted to be a surgeon.
-                              </p>
-                            </div>
-                          </div>
-
-                        </div>
-
-                        <div class="swiper-slide">
-                          <div class="img-container">
-                            <img src="img/alyson.jpg" alt="">
-                          </div>
-
-                          <div class="text-content">
-                            <div>
-                              <h3 class="sec-title">
-                                Dr. Turner.
-                              </h3>
-                            </div>
-          
-                            <div >
-                              <p>
-                                Lifted is on a wonderful journey. I would like to take this opportunity to tell you where we have been as a basis of where we are now and intending to go.It really goes back to my decision to become a doctor which occurred many moons ago at the age of 13. The first time I was able to view a surgery was in high school and I knew then I wanted to be a surgeon.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                          <div class="img-container">
-                            <img src="img/jamie.jpg" alt="">
-
-                          </div>
-
-                          <div class="text-content">
-                            <div>
-                              <h3 class="sec-title">
-                                Dr. Turner.
-                              </h3>
-                            </div>
-          
-                            <div >
-                              <p>
-                                Lifted is on a wonderful journey. I would like to take this opportunity to tell you where we have been as a basis of where we are now and intending to go.It really goes back to my decision to become a doctor which occurred many moons ago at the age of 13. The first time I was able to view a surgery was in high school and I knew then I wanted to be a surgeon.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                          <div class="img-container">
-                            <img src="img/carrie.jpg" alt="">
-                          </div>
-                          <div class="text-content">
-                            <div>
-                              <h3 class="sec-title">
-                                Dr. Turner.
-                              </h3>
-                            </div>
-          
-                            <div >
-                              <p>
-                                Lifted is on a wonderful journey. I would like to take this opportunity to tell you where we have been as a basis of where we are now and intending to go.It really goes back to my decision to become a doctor which occurred many moons ago at the age of 13. The first time I was able to view a surgery was in high school and I knew then I wanted to be a surgeon.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                          <div class="img-container">
-                            <img src="img/allain.jpg" alt="">
-                          </div>
-
-                          <div class="text-content">
-                            <div>
-                              <h3 class="sec-title">
-                                Dr. Turner.
-                              </h3>
-                            </div>
-          
-                            <div >
-                              <p>
-                                Lifted is on a wonderful journey. I would like to take this opportunity to tell you where we have been as a basis of where we are now and intending to go.It really goes back to my decision to become a doctor which occurred many moons ago at the age of 13. The first time I was able to view a surgery was in high school and I knew then I wanted to be a surgeon.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-      
-                      </div>
-                      <div class="swiper-button-next"></div>
-                      <div class="swiper-button-prev"></div>
-                      <!-- <div class="swiper-pagination"></div> -->
-                    </div>
-                  </div>
-
-
-
-
-                  <div class="ui-btn__container">
-                    <a href="" class="ui-btn ui-btn--sm">
-                        Schedule Appointment
-                    </a>
-                  </div>
-
-                  <div class="ui-btn__container">
-                    <a href="" class="ui-btn ui-btn--sm ui-btn-line">
-                        View All Staff
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </section>
-            
-            <section class="pontius-lift">
-              <div class="img">
-                <picture>
-                  <source media="(min-width: 576px)" srcset="img/pontius-lift-bg.jpg">
-                  <img src="img/pontius-lift-bg.jpg" alt="" class="pic">
-                </picture>
-              </div>
-              <div class="container">
-                <div class="content">
-
-                  <div class="col-content">
-                    <div class="rvl">
-                      <h2 class="sec-title">
-                        Pontius Lift
-                      </h2>
-                    </div>
-
-                    <div class="rvl">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                    </div>
-
-                    <div class="ui-btn__container">
-                      <a href="" class="ui-btn ui-btn--sm">
-                          Schedule Appointment
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-content">
-                    <div class="img-container">
-                      <div class="image-wrap">
-                        <h3 class="section-subtitle section-subtitle--pontius">INNOVATION</h3> 
-                        <img src="img/alyson-pontius.jpg" alt="Alyson" class="pic">
-                      </div>
-                      <!-- <picture>
-                        <source media="(min-width: 576px)" srcset="img/aesthetic-section-portrait.png">
-                       
-                      </picture> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section class="telemedicine">
-              <div class="img">
-                <picture>
-                  <source media="(min-width: 576px)" srcset="img/aesthetic-section-bg.jpg">
-                  <img src="img/aesthetic-section-bg.jpg" alt="" class="pic">
-                </picture>
-              </div>
-              <div class="container">
-                <div class="content">
-                  <div class="col-content">
-                    <div class="img-container">
-                      <div class="image-wrap">
-                        <h3 class="section-subtitle section-subtitle--telemedicine">Care</h3> 
-                        <img src="img/telemedicine.jpg" alt="" class="pic">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-content">
-                    <div class="rvl">
-                      <h2 class="sec-title">
-                        Telemedicine
-                      </h2>
-                    </div>
-
-                    <div class="rvl">
-                      <p>Our HIPPA Compliant Intouch platform is here to provide you with easy access to our medical staff. Through Intouch, paperwork is sent back instantly, allowing us to serve you quickly as possible. Connect for a telemedicine consultation today and discover a seamless health care experience from the comfort of your own home.</p>
-                    </div>
-
-                    <div class="ui-btn__container">
-                      <a href="" class="ui-btn ui-btn--sm">
-                          Schedule Appointment
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section class="testimonials">
-              <div class="img">
-                  <img src="img/testimonials-bg.jpg" alt="" class="pic">
-              </div>
-              <div class="container">
-                  <div class="content">
-                      <div class="rvl">
-                          <div class="col-container">
-                              <div class="testimonial-container">
-                                  <div class="logo-wrapper">
-                                    <img src="img/logo-white.svg" alt="">
-                                  </div>
-                                  <h2 class="sec-title">TESTIMONIALS.</h2>
-                                  <div class="swiper mySwiper2 slide-container" slidesPerGroup="1">
-                                      <div class="swiper-wrapper slide-content">
-                                          <div class="swiper-slide card" >
-                                              <div class="card-content">
-                                                  <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-                                                  </p>
-                                                  <div class="review-name">
-                                                      <p>- REVIEWER NAME</p>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="swiper-slide card" >
-                                            <div class="card-content">
-                                                <p>
-                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-                                                </p>
-                                                <div class="review-name">
-                                                    <p>- REVIEWER NAME</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide card" >
-                                          <div class="card-content">
-                                              <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-                                              </p>
-                                              <div class="review-name">
-                                                  <p>- REVIEWER NAME</p>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      </div>
-                                      <div class="swiper-button-next"></div>
-                                      <div class="swiper-pagination"></div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-
-                  </div>
-              </div>
-            </section>
-
-        </main>
-
-        <!-- Request an Appointment -->
-        <section class="form" id="schedulewithus">
+        <section class="welcome">
           <div class="img">
             <picture>
-              <source media="(min-width: 576px)" srcset="">
-              <img src="img/form-bg.jpg" alt="Older woman wearing a red blazer" class="pic">
+              <source media="(min-width: 576px)" srcset="img/welcome@2x.jpg">
+              <img src="img/welcome@2x.jpg" alt="" class="pic">
             </picture>
           </div>
 
-          <div class="intro__right tma-column">
-            <h2 class="section-subtitle section-subtitle--form">LUXURY</h2>
-          </div>
-          <div class="container">
-            <div class="content">
+            <div class="container">
+                <div class="content">
+                    <div class="rvl">
+                        <h1 class="sec-title">
+                            Restore Your Body, Rejuvenate Your Skin
+                        </h1>
+                    </div>
+                    <div class="rvl">
+                        <p>Your trusted local dermatologist is also your source for all your cosmetic procedure needs. Come to Title for <a href="" class="alink">non-surgical fat reduction</a>, <a href="" class="alink">acne</a>, and <a href="" class="alink">acne scarring reduction</a>, skin tightening, <a href="" class="alink">dermal fillers</a>, and more.</p>
+                    </div>
+                    <div class="rvl">
+                        <div class="btn-container">
+                            <a href="" class="ui-btn">
+                                REQUEST APPOINTMENT
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-              <div class="formcontent">
-                      <div class="rvl">
-                          <h2 class="sec-title">REQUEST AN APPOINTMENT.</h2>
-                      </div>
-                      <div class="rvl">
+        <section class="textblock">
+            <div class="container">
+                <div class="content">
+                    <div class="rvl">
+                        <div class="subtitle">
+                            MEDICAL DERMATOLOGY
+                        </div>
+                    </div>
+                    <div class="rvl">
+                        <h2 class="sec-title">
+                            Reliable Family, Surgical & Aesthetic Dermatological Care
+                        </h2>
+                    </div>
+                    <div class="rvl">
+                        <p>If you have a medical issue like <a href="" class="alink">moles</a>, <a href=""
+                            class="alink">warts</a>, or <a href="" class="alink">psoriasis</a>, you want your skin in
+                        the care of an expert. Dr. Brezel is a board-certified dermatologic surgeon with over 25 years
+                        of experience in medical, surgical, and aesthetic dermatology. Your skin could not be in better
+                        hands.</p>
+                    </div>
+                    <div class="rvl">
+                        <div class="btn-container">
+                            <a href="" class="ui-btn">
+                                BETTER SKIN STARTS HERE
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+
+    </main>
+
+    <!-- Request an Appointment -->
+    <section class="form">
+        <div class="container">
+
+            <!-- <div class="img">
+                <img src="img/requestappointment@2x.jpg" alt="" class="pic">
+            </div> -->
+
+            <div class="formcontent">
+                <div class="content">
+                    <div class="rvl">
+                        <h2 class="sec-title">Request Appointment</h2>
+                    </div>
+                    <div class="rvl">
                         <p>
-                          Lifted offers anti-aging and surgical care you can count on. Fill out the form or call <a href="#">(805) 962-1957</a> to request an appointment.
+                            We look forward to helping you with all your dermatological needs at Title! To
+                            schedule an appointment now, please fill out and submit the form below.
                         </p>
-                      </div>
-
-                  <form id="schedule" name="scheduleform" class="img-shadow appointment-wrapper">
+                    </div>
+                </div>
+                <form id="schedule" name="scheduleform" class="img-shadow appointment-wrapper">
                     <div class="formpwrap">
-
-                      <div class="top-col">
-                        <!-- Fullname -->
+                        <!-- First -->
                         <div class="input rvl">
-                          <input type="text" name="name" placeholder="Full Name" class="form-control" required />
+                            <input type="text" name="firstname" placeholder="First Name" class="form-control" required />
                         </div>
 
-                        
+                        <!-- Last -->
+                        <div class="input rvl">
+                            <input type="text" name="lastname" placeholder="Last Name" class="form-control" required />
+                        </div>
+
                         <!-- Email -->
                         <div class="input rvl">
-                          <input type="text" placeholder="Email" name="email" class="form-control" />
+                            <input type="text" placeholder="Email" name="email" class="form-control" />
                         </div>
-
 
                         <!-- Phone -->
                         <div class="input rvl">
-                          <input type="text" placeholder="Phone Number" name="phone" class="form-control" />
+                            <input type="text" placeholder="Phone Number" name="phone" class="form-control" />
                         </div>
 
-                        <div class="preferred-col">
-                          <!-- Phone -->
-                          <div class="input rvl">
-                            <input type="text" placeholder="Preferred Time" name="time" class="form-control form-control2" />
-                          </div>
-
-`                         <!-- Phone -->
-                          <div class="input rvl">
-                            <input type="text" placeholder="Preferred Date" name="date" class="form-control form-control2" />
-                          </div>
-                        </div>
-
-
-                        <!-- Services -->
+                        <!-- Preferred Time -->
                         <div class="input rvl">
-                            <select name="service_selection" class="form-control input-services" required>
-                                <option value="" disabled selected>
-                                  Service Selection
-                                </option>
-                                <option value="Test">Test</option>
-                                <option value="Test">Test</option>
-                                <option value="Test">Test</option>
-                                <option value="Test">Test</option>
+                            <select name="preferred_time" class="form-control" required>
+                                <option value="" disabled selected>Treatment (Optional)</option>
+                                <option value="Early Morning">Early Morning</option>
+                                <option value="Late Morning">Late Morning</option>
+                                <option value="Early Afternoon">Early Afternoon</option>
+                                <option value="Late Afternoon">Late Afternoon</option>
                             </select>
                         </div>
 
-
-                        <!-- Location -->
+                        <!-- Preferred Day -->
                         <div class="input rvl">
-                          <select name="location" class="form-control input-location" required>
-                              <option value="" disabled selected>
-                                Location
-                              </option>
-                              <option value="Test">Test</option>
-                              <option value="Test">Test</option>
-                              <option value="Test">Test</option>
-                              <option value="Test">Test</option>
-                          </select>
-
-                          <span><svg xmlns="http://www.w3.org/2000/svg" width="15.753" height="9.005" viewBox="0 0 15.753 9.005">
-                            <g id="arrow-down-short" transform="translate(-10.123 -16.872)">
-                              <path id="Path_117" data-name="Path 117" d="M10.454,17.2a1.125,1.125,0,0,1,1.593,0L18,23.159,23.954,17.2A1.126,1.126,0,1,1,25.547,18.8l-6.75,6.75a1.125,1.125,0,0,1-1.593,0l-6.75-6.75a1.125,1.125,0,0,1,0-1.593Z" fill="#70ceeb" fill-rule="evenodd"/>
-                            </g>
-                          </svg>
-                          </span>
-                      </div>
-
-                      <div class="bottom-col">
+                            <select name="preferred_day" class="form-control" required>
+                                <option value="" disabled selected>Date/Time (Optional)</option>
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                                <option value="Saturday">Saturday</option>
+                            </select>
+                        </div>
 
                         <!-- Submit Button -->
                         <div class="f-submit rvl">
-                            <button type="submit" class="ui-btn ui-btn-white">
-                                SUBMIT
+                            <button type="submit" class="ui-btn ui-submit">
+                                REQUEST APPOINTMENT
                             </button>
                         </div>
-                      </div>
+
                     </div>
-                  </form>
+                </form>
 
-                  <div id="form-results"></div>
-              </div>
-
+                <div id="form-results"></div>
             </div>
 
-          </div>
-
-
-        </section>
-
-        <footer id="main">
-          <div class="container">
-            <div class="content">
-              <div class="block">
-                <div class="cnt">
-                  <h2 class="sec-title">
-                    Quick Links
-                  </h2>
-                </div>
-                <div class="cnt">
-                  <a href="" class="alink">ABOUT US</a>
-                  <a href="" class="alink">NON-SURGICAL</a>
-                  <a href="" class="alink">SURGICAL</a>
-                  <a href="" class="alink">TELEMEDICINE</a>
-                  <a href="" class="alink">CONCERNS</a>
-                  <a href="" class="alink">PATIENT INFO</a>
-                  <a href="" class="alink">EVENTS</a>
-                  <a href="" class="alink">PROMOTIONS</a>
-                  <a href="" class="alink">BLOG</a>
-                </div>
-  
-                <div class="cnt social">
-                  <p>QUICK LINKS</p>
-                  <div class="social-links">
-                    <a href="#">
-                      <img src="img/facebook-app-symbol.svg" alt="facebook">
-                    </a>
-                    <a href="#">
-                      <img src="img/twitter.svg" alt="Twitter">
-                    </a>
-                    <a href="#">
-                      <img src="img/instagram.svg" alt="Instagram">
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-              
-              <div class="border-line">
-
-              </div>
-              <div class="block mid-block">
-                <div class="cnt">
-                  <h2 class="sec-title">
-                    Hayward Location
-                  </h2>
-                </div>
-                
- 
-                <div class="cnt">
-                  <a href="" class="alink">
-                    27225 Calaroga Ave</br>
-                    Hayward, CA 94545</br>
-                  </a>
-                  <a href="" class="alink">
-                    Phone: (805) 250-3645
-                  </a>
-  
-                </div>
-  
-                <div class="cnt ">
-                  <p>MONDAY: CLOSED</p>
-                  <p>TUESDAY: CLOSED</p>
-                  <p>WEDNESDAY: CLOSED</p>
-                  <p>THURSDAY: 9:00  5:00 PM</p>
-                  <p>FRIDAY: 9:00  5:00 PM</p>
-                  <p>SATURDAY: 9:00  5:00 PM</p>
-                  <p>SUNDAY: 9:00  5:00 PM</p>
-                </div>
-  
-                <div class="cnt">
-                  <div class="ui-btn__container">
-                    <a href="" class="ui-btn ui-btn--sm ui-btn-white">
-                        Schedule Appointment
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="border-line">
-                
-              </div>
-  
-              <div class="block">
-
-                <div class="cnt">
-                  <h2 class="sec-title">
-                    Santa Barbara Location
-                  </h2>
-                </div>
- 
-                <div class="cnt">
-                  
-                  <a href="" class="alink">
-                    1250 Coast Village Road Suite L </br>
-                    Second Floor</br>
-                    Santa Barbara, CA 93108</br>
-                  </a>
-                  <a href="tel:805-962-1957" class="alink">
-                    Phone: (805) 962-1957
-                  </a>
-                  <a href="" class="alink">
-                    FAX: (805) 966-3428
-                  </a>
-  
-                </div>
-  
-                <div class="cnt last-col-cnt">
-                  <p>MONDAY: 9:00  5:00 PM</p>
-                  <p>TUESDAY: 9:00  5:00 PM</p>
-                  <p>WEDNESDAY: 9:00  5:00 PM</p>
-                  <p>THURSDAY: 9:00  5:00 PM</p>
-                  <p>FRIDAY: 9:00  5:00 PM</p>
-                  <p>SATURDAY: CLOSED</p>
-                  <p>SUNDAY: CLOSED</p>
-                </div>
-  
-                <div class="cnt">
-                  <div class="ui-btn__container">
-                    <a href="" class="ui-btn ui-btn--sm ui-btn-white">
-                        Schedule Appointment
-                    </a>
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-
-          </div>
-        </footer>
-
-        <!-- footer copy -->
-        <div class="footercopy">
-          <div class="container">
-              <div class="row">
-                  <div class="flexcen">
-                      <div class="copy__content">
-                          <span class="main">© 2022 Lifted</span>
-                          <span class="l">|</span>
-                          <span class="main">
-                              <a href="https://urgeinteractive.com/" target="_blank">Website By Urge Interactive.</a>
-                          </span>
-                      </div>
-                  </div>
-              </div>
-          </div>
         </div>
-        <!-- footer copy -->
+    </section>
 
+    <!-- FOOTER CONTENT -->
 
+    <footer id="main">
 
-        <script defer src="public/frontend-bundle.js"></script>
-        <!-- GSAP CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CSSRulePlugin.min.js" integrity="sha512-oYnRsy+bFXYr+btXcKk2dpzfERnCUc5G4GkJ0AO/XSvomLV7Xc7tZVhTsYIz9QzOAw9qo/6qoA6JTpzaYuHUGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <div class="container">
 
-        <!-- Swiperjs CDN -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+            <div class="leftblock">
+            <!-- logo -->
+            <div class="logoblock">
+                <a href="" class="logo">
+                    <!-- <img alt="" class="pic" src="img/Title@2x.png"> -->
+                    Logo
+                </a>
+            </div>
+            </div>
+            <div class="rightblock">
+                <div class="content-container">
+                    <span class="block">
+                        <h2 class="sec-title">
+                            CONTACT US
+                        </h2>
+                        <span class="cnt">
+                            <a href="" class="alink">Place</a>
+                           <a href="" class="link">444 444 44444</a>
+                        </span>
+                    </span>
+                    <span class="block">
+                        <h2 class="sec-title">
+                            HOURS
+                        </h2>
+                        <span class="cnt">
+                            Mon. & Wed - 9am - 7pm <br>
+                            Tues. - 9am - 5pm<br>
+                            Thurs. - 9am - 7pm<br>
+                            Fri. - 9am - 4pm<br>
+                            Sat. & Sun. - Closed
+                        </span>
+                    </span>
+                    <span class="block signupform">
+                        <h2 class="sec-title">
+                            SIGN UP FOR OUR NEWSLETTER
+                        </h2>
+                        <span class="cnt">
+                            <div class="formcontent">
+                                <form action="">
+                                    <span class="inpt">
+                                        <input type="text" placeholder="Enter Your Email">
+                                    </span>
+                                    <div class="submit">
+                                        <button type="submit" class="ui-btn ui-submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.08" height="9.672" viewBox="0 0 18.08 9.672">
+                                                <path id="Icon_metro-chevron-thin-right" data-name="Icon metro-chevron-thin-right" d="M7.718,9.042.211,1.242a.732.732,0,0,1,0-1.029.716.716,0,0,1,1.019,0L9.46,8.525a.732.732,0,0,1,0,1.029L1.23,17.867a.715.715,0,0,1-1.019,0,.732.732,0,0,1,0-1.029l7.506-7.8Z" transform="translate(0 9.672) rotate(-90)" fill="#fff"/>
+                                              </svg>
+                                              
+                                        </button>
+                                    </div>
+                                </form>
+                                <div class="social">
+                                    <a href="" class="ui-social">
+                                        <svg id="fb" xmlns="http://www.w3.org/2000/svg" width="35.513" height="35.513" viewBox="0 0 35.513 35.513">
+                                            <path id="Path_135" data-name="Path 135" d="M17.757,0A17.757,17.757,0,1,1,0,17.757,17.757,17.757,0,0,1,17.757,0Z" fill="#4d90ff"/>
+                                            <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M10.636,10.145l.5-3.264H8.005V4.763A1.632,1.632,0,0,1,9.845,3h1.424V.221A17.363,17.363,0,0,0,8.742,0C6.162,0,4.476,1.563,4.476,4.393V6.881H1.609v3.264H4.476v7.891H8.005V10.145Z" transform="translate(11.263 8.738)" fill="#fff"/>
+                                          </svg>
+                                          
+                                    </a>
+                                    <a href="" class="ui-social">
+                                        <svg id="ig" xmlns="http://www.w3.org/2000/svg" width="35.513" height="35.513" viewBox="0 0 35.513 35.513">
+                                            <path id="Path_134" data-name="Path 134" d="M17.757,0A17.757,17.757,0,1,1,0,17.757,17.757,17.757,0,0,1,17.757,0Z" transform="translate(0)" fill="#4d90ff"/>
+                                            <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram" d="M9.017,6.632a4.624,4.624,0,1,0,4.624,4.624A4.617,4.617,0,0,0,9.017,6.632Zm0,7.631a3.006,3.006,0,1,1,3.006-3.006A3.012,3.012,0,0,1,9.017,14.262Zm5.892-7.82A1.079,1.079,0,1,1,13.83,5.364,1.076,1.076,0,0,1,14.909,6.442Zm3.063,1.095a5.338,5.338,0,0,0-1.457-3.779A5.373,5.373,0,0,0,12.735,2.3c-1.489-.085-5.952-.085-7.441,0A5.365,5.365,0,0,0,1.515,3.754,5.355,5.355,0,0,0,.058,7.533c-.085,1.489-.085,5.952,0,7.441a5.338,5.338,0,0,0,1.457,3.779A5.38,5.38,0,0,0,5.294,20.21c1.489.085,5.952.085,7.441,0a5.338,5.338,0,0,0,3.779-1.457,5.373,5.373,0,0,0,1.457-3.779c.085-1.489.085-5.948,0-7.437Zm-1.924,9.035a3.044,3.044,0,0,1-1.714,1.714c-1.187.471-4,.362-5.316.362s-4.133.1-5.316-.362a3.044,3.044,0,0,1-1.714-1.714c-.471-1.187-.362-4-.362-5.316s-.1-4.133.362-5.316A3.044,3.044,0,0,1,3.7,4.225c1.187-.471,4-.362,5.316-.362s4.133-.1,5.316.362a3.044,3.044,0,0,1,1.714,1.714c.471,1.187.362,4,.362,5.316S16.519,15.389,16.048,16.572Z" transform="translate(8.462 6.501)" fill="#fff"/>
+                                          </svg>
+                                          
+                                    </a>
+                                </div>
+                            </div>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
 
-        <script>
-          var swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            loop: true,
-            slidesPerView: "auto",
-            coverflowEffect: {
-              rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 2,
-              slideShadows: true,
-              // modifier: 1,
-              // rotate: 50,
-            },
-            navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-          });
+        <!-- quick links -->
+        <div class="quick-links">
+            <div class="links-bar">
+                <span class="item">
+                    <a href="" class="link">ABOUT</a>
+                </span>
+                <span class="item">
+                    <a href="" class="link">CONCERNS</a>
+                </span>
+                <span class="item">
+                    <a href="" class="link">TREATMENTS</a>
+                </span>
+           
+                <span class="item">
+                    <a href="" class="link">PATIENT INFO</a>
+                </span>
+             
+                <span class="item">
+                    <a href="" class="link">GALLERY</a>
+                </span>
+                <span class="item">
+                    <a href="" class="link">REQUEST APPOINTMENT</a>
+                </span>
+              
+            </div>
+        </div>
 
-          
-          var swiper = new Swiper(".mySwiper2", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          slidesPerGroup: 1,
-          loop: true,
-          loopFillGroupWithBlank: true,
-          noSwiping: true,
-          noSwipingClass: 'swiper-slide',
-          autoplay: {
-            delay: 10000,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
+    </footer>
 
+    <!-- footer copy -->
+    <div class="footercopy">
+        <div class="container">
+            <div class="row">
+                <div class="flexcen">
+                    <div class="copy__content">
+                        <span class="main">© 2020 Title</span>
+                        <span class="l">|</span>
+                        <span class="main">
+                            <a href="https://urgeinteractive.com/" target="_blank">Website By Urge Interactive.</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer copy -->
 
-        </script>
+    <!-- Scroll Up -->
+    <a href="" id="scroll" class="scroll-top" style="display: none;">
+        <span class="text">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+                x="0px" y="0px" viewBox="0 0 490.523 490.523" style="enable-background:new 0 0 490.523 490.523;"
+                xml:space="preserve">
+                <path style="fill:#FFC107;"
+                    d="M487.411,355.047L252.744,120.38c-4.165-4.164-10.917-4.164-15.083,0L2.994,355.047  c-4.093,4.237-3.976,10.99,0.262,15.083c4.134,3.993,10.687,3.993,14.821,0l227.115-227.115l227.115,227.136  c4.237,4.093,10.99,3.976,15.083-0.261c3.993-4.134,3.993-10.688,0-14.821L487.411,355.047z" />
+                <path
+                    d="M479.859,373.266c-2.831,0.005-5.548-1.115-7.552-3.115L245.192,143.015L18.077,370.151  c-4.237,4.093-10.99,3.976-15.083-0.262c-3.993-4.134-3.993-10.687,0-14.821l234.667-234.667c4.165-4.164,10.917-4.164,15.083,0  l234.667,234.667c4.159,4.172,4.148,10.926-0.024,15.085C485.388,372.146,482.681,373.265,479.859,373.266z" />
+            </svg>
+        </span>
+    </a>
 
+    <script defer src="public/frontend-bundle.js"></script>
 
-        <link rel="stylesheet" href="https://use.typekit.net/yil1hpp.css">
-    </body>
+    <link rel="stylesheet" href="https://use.typekit.net/yil1hpp.css">
+    <script type="text/javascript" defer>
+        WebFontConfig = {
+            google: {
+                families: [
+                    "Cinzel:wght@400;500;600;700;800;900&",
+                    "Lato:wght@100;300;400;700;900",
+                ]
+            }
+        };
+
+        (function () {
+            var wf = document.createElement("script");
+            wf.src = "https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";
+            wf.type = "text/javascript";
+            wf.async = "true";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
 </html>
