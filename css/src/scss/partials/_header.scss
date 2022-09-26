@@ -5,7 +5,7 @@
 	left: 0;
 	right: 0;
 	z-index: 123123;
-	padding: 0;
+	padding: 20px 0;
 	background: transparent;
 	
 
@@ -221,6 +221,10 @@
 				z-index: 123;
 			}
 
+
+
+
+
 			&.activemenu {
 				opacity: 1;
 				visibility: visible;
@@ -235,6 +239,22 @@
 				width: 100%;
 				position: relative;
 				display: flex;
+        align-items: center;
+
+        .search {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 30px;
+          background: $color-secondary;
+          padding: 13px;
+          border-radius: 50%;
+
+          .search-link {
+            width: 25px;
+            height: 25px; 
+          }
+        }
 				@media screen and (max-width: 992px) {
 					display: flex;
 					margin: 0 auto;
@@ -257,6 +277,8 @@
 					max-width: 100%;
 					right: 0;
 				}
+
+
 
 				// First level
 				> li.menu-item {
