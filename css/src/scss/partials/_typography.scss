@@ -53,27 +53,27 @@ $font-weight: 700;
 $font-style: normal;
 
 //Korolev Compressed
-$font-family: "korolev-compressed", serif;
+$font-family: "futura-pt", sans-serif;
 $font-weight: 200;
 $font-style: normal;
 
 //Korolev Compressed
-$font-family: "korolev-compressed", serif;
+$font-family: "futura-pt", sans-serif;
 $font-weight: 300;
 $font-style: normal;
 
 //Korolev Compressed
-$font-family: "korolev-compressed", serif;
+$font-family: "futura-pt", sans-serif;
 $font-weight: 500;
 $font-style: normal;
 
 //Korolev Compressed
-$font-family: "korolev-compressed", serif;
+$font-family: "futura-pt", sans-serif;
 $font-weight: 700;
 $font-style: normal;
 
 //Korolev Compressed
-$font-family: "korolev-compressed", serif;
+$font-family: "futura-pt", sans-serif;
 $font-weight: 900;
 $font-style: normal;
 
@@ -101,9 +101,9 @@ $font-style: normal;
   
 
 $font-primary:  "linotype-didot", serif;
-$font-secondary: "korolev-compressed", sans-serif;
-$font-third: "scotch-display", sans-serif;
-$font-fourth: "linotype-didot-headline", serif;
+$font-secondary: "futura-pt", sans-serif;
+// $font-third: "scotch-display", sans-serif;
+// $font-fourth: "linotype-didot-headline", serif;
 // Base Font for HTML
 $base-font-size: 18px;
 
@@ -311,6 +311,11 @@ p {
   color: #272727;
   letter-spacing: 0em;
   line-height: 1.875;
+
+
+  @include isRetina {
+    font-size: 20px;
+  }
 
 
 
