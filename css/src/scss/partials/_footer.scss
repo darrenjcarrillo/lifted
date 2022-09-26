@@ -1,0 +1,208 @@
+#main {
+  // background: $color-main;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background: hsla(32, 43%, 53%, 1);
+  background: radial-gradient(circle, hsla(32, 43%, 53%, 1) 0%, hsla(32, 43%, 53%, 1) 0%, hsla(19, 33%, 42%, 1) 65%);
+  background: -moz-radial-gradient(circle, hsla(32, 43%, 53%, 1) 0%, hsla(32, 43%, 53%, 1) 0%, hsla(19, 33%, 42%, 1) 65%);
+  background: -webkit-radial-gradient(circle, hsla(32, 43%, 53%, 1) 0%, hsla(32, 43%, 53%, 1) 0%, hsla(19, 33%, 42%, 1) 65%);
+  // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BA8B54", endColorstr="#BA8B54", GradientType=1 );
+
+  .container {
+   width: 100%;
+
+    .content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+
+      @include isLarge {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+      }
+
+      .block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        align-items: center;
+        padding: 0 20px;
+        margin-bottom: 40px;
+
+        @include isLarge {
+          width: 30%;
+          margin-bottom: 0;
+        }
+
+        h2.sec-title {
+          // width: 50%;
+          font-size: 20px;
+          color: $f;
+          text-align: center;
+          margin-bottom: 0;
+        }
+
+        .cnt {
+          // width: 175px;
+          // width: 100%;
+
+
+          display: flex;
+          flex-direction: column;
+          align-items: ce;
+          font-size: 20px;
+          margin-bottom: 20px;
+
+          a {
+            // margin-bottom: 10px;
+            text-decoration: none;
+            color: $f;
+            line-height: 1.5;
+          }
+
+          p {
+            color: $f;
+          }
+
+          a.ui-btn-white {
+            color: #000;
+          }
+        }
+
+        .last-col-cnt {
+          margin-left: -20px;
+        }
+
+        .social {
+          display: flex;
+          color: $f;
+
+          @include isLarge {
+            margin-left: 40px;
+          }
+        
+          p {
+            font-family: $font-primary;
+          }
+
+          div.social-links {
+            // width: 100%;
+            
+            display: flex;
+            justify-content: space-between;
+
+            // p {
+            //   font-family: $font-primary;
+            // }
+
+            a {
+              margin-right: 15px;
+
+              img {
+                width: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      .border-line {
+        width: 2px;
+        background: $f;
+        height: 400px;
+
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
+      }
+
+    }
+  }
+}
+
+// copywrite
+.footercopy {
+  padding: 0 0 7px;
+  position: relative;
+  z-index: 1;
+  background-color: #000;
+
+
+  .flexcen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      padding: 20px;
+    }
+  }
+
+  .flexcen .copy__content {
+    margin: 0 auto;
+    font-size: 16px;
+
+    @include isRetina {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  span.l {
+    margin: 0 10px;
+    display: none;
+
+    @include isLarge {
+      display: block;
+    }
+  }
+  .copy__content a {
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 16px;
+
+    @include isRetina {
+      font-size: 20px;
+    }
+    
+  }
+
+  .flexcen {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+  }
+  .footercopy {
+  }
+  .copy__content {
+    mix-blend-mode: normal;
+    font-weight: 300;
+    position: relative;
+    z-index: 23;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 0;
+    letter-spacing: 0em;
+    line-height: 2;
+    font-weight: normal;
+  }
+}

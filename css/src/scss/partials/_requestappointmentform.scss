@@ -1,0 +1,76 @@
+.input {
+  margin-bottom: 20px;
+  border-bottom: 3px solid #000;
+}
+
+input.form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  font-family: $font-primary;
+  color: #000;
+  font-size: 16px;
+  
+
+  @include isRetina {
+    font-size: 20px;
+  }
+
+
+  &::placeholder {
+    color: #000;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 11px 7px rgba(0, 0, 0, 0.11);
+    border-radius: 3px;
+  }
+}
+
+input.form-control2 {
+  background-image: url('http://urgelabs.com/dev/static/turner-medical/img/right-icon.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 10px;
+}
+
+select.form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  font-family: $font-primary;
+  color: #000;
+  font-size: 16px;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+  background-image: url('/img/right-icon.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 10px;
+
+
+
+  @include isRetina {
+    font-size: 20px;
+  }
+
+  &::placeholder {
+    color: #000;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 11px 7px rgba(0, 0, 0, 0.11);
+    border-radius: 3px;
+  }
+}
+
+.f-submit {
+  button {
+    font-family: $font-secondary;
+  }
+}

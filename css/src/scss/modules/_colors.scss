@@ -1,0 +1,33 @@
+// Color Theme Vars
+$color-main: #C79757;
+$color-secondary: #333333;
+$color-third: #C79757;
+
+$color-dark: darken(#C79757, 20%);
+$color-dark-accent: darken(#C79757, 30%);
+$color-extra-dark: darken(#C79757, 40%);
+
+$color-light: lighten(#C79757, 20%);
+$color-light-accent: lighten(#C79757, 30%);
+$color-extra-light: lighten(#C79757, 40%);
+
+$color-white: #fff;
+$color-black: #000;
+
+$f: $color-white;
+$b: $color-black;
+
+$paragraph_text: #000;
+
+// Shorthand scss Variables
+$m: $color-main;
+$se: $color-secondary;
+
+
+// CSS Variables
+
+:root {
+  --m: #{$m};
+  --s: #{$se};
+  
+}
