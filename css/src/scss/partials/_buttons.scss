@@ -23,12 +23,16 @@
   color: $color-secondary;
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   font-family: $font-secondary;
   text-transform: uppercase;
   letter-spacing: 0;
   opacity: 1;
+
+  @include isXLarge {
+    font-size: 18px;
+  }
 
   span {
     padding: 0 15px;
