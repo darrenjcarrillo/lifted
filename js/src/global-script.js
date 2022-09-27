@@ -286,3 +286,21 @@ $("[data-scroll-to]").click(function(e) {
 
   if ($focusElement) $($focusElement).focus();
 });
+
+
+// Swiper Slide
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  loop: true,
+  breakpoints: {
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+});
