@@ -153,7 +153,7 @@ body {
 }
 
 span.subtitle {
-  color: $color-main;
+  color: $color-secondary;
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 10px;
@@ -173,7 +173,7 @@ h4,
 h5,
 h6 {
   margin-top: $header-margin * 1.5;
-  color: $color-main;
+  color: $color-secondary;
   line-height: $header-line-height;
   font-weight: 300;
   font-family: $font-primary;
@@ -205,70 +205,48 @@ h6 {
 h1 {
   font-size: $header-size;
   margin-bottom: $header-margin;
+  font-size: 65px;
+  font-weight: bold;
 
-  &.sec-title {
-    font-size: rem(50px);
-    margin-top: 0;
-
-    @media screen and (max-width: 1100px) {
-      font-size: 4rem;
-    }
+  @include isXLarge {
+    font-size: 80px;
   }
+
+  @include isRetina {
+    font-size: 100px;
+  }
+
 }
 
 h2 {
   font-size: $header-size / 1.3;
   margin-bottom: $header-margin / 1.3;
+  font-size: 65px;
+  font-weight: bold;
 
-  &.sec-title {
-    margin-top: 0;
-    color: $m;
+  @include isXLarge {
+    font-size: 80px;
+  }
 
-    line-height: 54px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    color: rgba(59, 69, 81, 1);
-
-
-
-    font-size: 60px;
-    color: #1f3c6a;
-    letter-spacing: 0em;
-    line-height: 1.1333333333333333;
-
-
-
-    &.w {
-      color: $f;
-    }
-    @media screen and (max-width: 1100px) {
-    }
-    @media screen and (max-width: 992px) {
-      font-size: 3.0rem;
-    }
+  @include isRetina {
+    font-size: 100px;
   }
 }
 
 h3 {
   font-size: $header-size / 1.5;
   margin-bottom: $header-margin / 1.5;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: $font-secondary;
+  text-transform: uppercase;
 
-  &.sec-title {
-    font-size: rem(36px);
-    margin-top: 0;
-    font-weight: 400;
-    color: $color-secondary;
-    font-family: $font-secondary;
-    line-height: 28px;
-    letter-spacing: 0.1px;
-
-    @media screen and (max-width: 1100px) {
-      font-size: 4rem;
-    }
-    @media screen and (max-width: 992px) {
-      font-size: 3rem;
-    }
+  @include isXLarge {
+    font-size: 25px;
+  }
+  
+  @include isRetina {
+    font-size: 30px;
   }
 }
 .sec-title.underline {
@@ -306,7 +284,7 @@ h6 {
 // Paragraphs
 p {
   margin-bottom: $paragraph-margin;
-
+  font-family: $font-secondary;
   font-size: 16px;
   color: #272727;
   letter-spacing: 0em;
