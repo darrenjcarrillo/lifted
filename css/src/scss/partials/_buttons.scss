@@ -58,6 +58,7 @@
     }
 
   }
+
   &:hover {
     text-decoration: none;
     color: $color-secondary;
@@ -72,6 +73,53 @@
 
   &.ui-btn-white {
     color: $f;
+
+  }
+
+  &.ui-btn-small {
+    font-size: 14px;
+
+    div.icon {
+      background: $color-secondary;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      border-radius: 50%;
+      transition: 0.3s;
+  
+      img {
+        width: 20px;
+        height: 20px;
+      }
+  
+    }
+
+
+  }
+
+  &.ui-btn-small-white {
+    color: $f;
+    font-size: 14px;
+    
+    div.icon {
+      background: $f;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      border-radius: 50%;
+      transition: 0.3s;
+  
+      img {
+        width: 20px;
+        height: 20px;
+      }
+  
+    }
+
 
   }
 }

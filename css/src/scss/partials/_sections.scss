@@ -1110,10 +1110,12 @@ section.article {
         align-items: center;
         justify-content: flex-end;
 
-        .img-wrapper {
-          position: absolute;
-          z-index: 0;
 
+        .img-wrapper {
+          position: relative;
+          z-index: 0;
+          height: 100%;
+          
           picture {
             &::after {
               content: close-quote;
@@ -1127,6 +1129,14 @@ section.article {
               background: linear-gradient(180deg,hsla(0,0%,100%,0) 25%,#212529 85%);
               opacity: .9;
               height: 100%;
+              border-radius: 50px;
+            }
+
+            img {
+              border-radius: 50px;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
             }
           }
         }
@@ -1135,14 +1145,47 @@ section.article {
           z-index: 1;
 
           h4 {
+            font-size: 15px;
+            font-weight: bold;
+            font-family: $font-secondary;
             color: $f;
+
+            @include isRetina {
+              font-size: 20px;
+            }
+          }
+
+          span.date {
+            p {
+              font-size: 12px;
+              text-transform: uppercase;
+              letter-spacing: 0;
+              font-weight: 500;
+              color: $f;
+              @include isRetina {
+                font-size: 14px;
+              }
+            }
           }
 
           p {
+            font-weight: 500;
+            font-size: 14px;
             color: $f;
+          }
+
+          .btn-container {
+            display: flex;
+            justify-content: flex-end;
+          }
+
+          &.text-top {
+            position: absolute;
+            padding: 40px 80px 40px 40px;
           }
         } 
         
+
 
         &:nth-child(2) {
            justify-content: space-between;
@@ -1152,40 +1195,38 @@ section.article {
 
             .img-wrap {
               width: 30%;
+
+              img   {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+              }
             }
 
             .text-wrap {
               width: 65%;
+              // padding: 0;
 
               h4 {
-                font-size: 15px;
-                font-weight: bold;
-                font-family: $font-secondary;
+            
                 color: $b;
-
-                @include isRetina {
-                  font-size: 20px;
-                }
+    
               }
 
               span.date {
                 p {
-                  font-size: 12px;
-                  text-transform: uppercase;
-                  letter-spacing: 0;
-                  font-weight: 500;
+
                   color: $b;
-                  @include isRetina {
-                    font-size: 14px;
-                  }
+  
                 }
               }
 
               p {
-                font-weight: 500;
-                font-size: 14px;
                 color: $b;
               }
+
+
+
             }
             
             .btn-container {
