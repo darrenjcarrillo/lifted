@@ -649,12 +649,7 @@
         </section>
 
         <section class="skincare">
-          <!-- <div class="img">
-            <picture class="">
-              <source media="(min-width: 576px)" srcset="img/team-slider-bg@2x.jpg">
-              <img src="img/team-slider-bg@2x.jpg" alt="" class="pic"> 
-            </picture>
-          </div> -->
+
           <div class="container">
               <div class="content">
                 <div class="rvl">
@@ -751,6 +746,94 @@
                   </div>
                 </div>
 
+              </div>
+
+          </div>
+        </section>
+
+        <!-- Request an Appointment -->
+        <section class="form">
+          <div class="img">
+            <picture class="">
+              <source media="(min-width: 576px)" srcset="img/request-appointment-bg@2x.jpg">
+              <img src="img/request-appointment-bg@2x.jpg" alt="" class="pic"> 
+            </picture>
+          </div>
+          <div class="container">
+
+
+
+              <div class="formcontent">
+                  <div class="content">
+                    <div class="rvl">
+                      <h3>CALL + CONNECT</h3>
+                    </div>
+                      <div class="rvl">
+                          <h2 class="sec-title">Request Appointment</h2>
+                      </div>
+                      <div class="rvl">
+                          <p>
+                            Our Lifted Beauty + Wellness team is here to maximize your glow and give you the vibrant look you deserve. Fill out the form below or give us a call at  <a href="tel:206-299-1102">(206) 299-1102</a> to schedule your visit today.
+                          </p>
+                      </div>
+                  </div>
+                  <form id="schedule" name="scheduleform" class="img-shadow appointment-wrapper">
+                      <div class="formpwrap">
+                          <!-- First -->
+                          <div class="input rvl">
+                              <input type="text" name="firstname" placeholder="First Name" class="form-control" required />
+                          </div>
+
+                          <!-- Last -->
+                          <div class="input rvl">
+                              <input type="text" name="lastname" placeholder="Last Name" class="form-control" required />
+                          </div>
+
+                          <!-- Email -->
+                          <div class="input rvl">
+                              <input type="text" placeholder="Email" name="email" class="form-control" />
+                          </div>
+
+                          <!-- Phone -->
+                          <div class="input rvl">
+                              <input type="text" placeholder="Phone Number" name="phone" class="form-control" />
+                          </div>
+
+                          <!-- Preferred Time -->
+                          <div class="input rvl">
+                              <select name="preferred_time" class="form-control" required>
+                                  <option value="" disabled selected>Treatment (Optional)</option>
+                                  <option value="Early Morning">Early Morning</option>
+                                  <option value="Late Morning">Late Morning</option>
+                                  <option value="Early Afternoon">Early Afternoon</option>
+                                  <option value="Late Afternoon">Late Afternoon</option>
+                              </select>
+                          </div>
+
+                          <!-- Preferred Day -->
+                          <div class="input rvl">
+                              <select name="preferred_day" class="form-control" required>
+                                  <option value="" disabled selected>Date/Time (Optional)</option>
+                                  <option value="Monday">Monday</option>
+                                  <option value="Tuesday">Tuesday</option>
+                                  <option value="Wednesday">Wednesday</option>
+                                  <option value="Thursday">Thursday</option>
+                                  <option value="Friday">Friday</option>
+                                  <option value="Saturday">Saturday</option>
+                              </select>
+                          </div>
+
+                          <!-- Submit Button -->
+                          <div class="f-submit rvl">
+                              <button type="submit" class="ui-btn ui-submit">
+                                  REQUEST APPOINTMENT
+                              </button>
+                          </div>
+
+                      </div>
+                  </form>
+
+                  <div id="form-results"></div>
               </div>
 
           </div>
@@ -943,87 +1026,7 @@
 
     </main>
 
-    <!-- Request an Appointment -->
-    <section class="form">
-        <div class="container">
 
-            <!-- <div class="img">
-                <img src="img/requestappointment@2x.jpg" alt="" class="pic">
-            </div> -->
-
-            <div class="formcontent">
-                <div class="content">
-                    <div class="rvl">
-                        <h2 class="sec-title">Request Appointment</h2>
-                    </div>
-                    <div class="rvl">
-                        <p>
-                            We look forward to helping you with all your dermatological needs at Title! To
-                            schedule an appointment now, please fill out and submit the form below.
-                        </p>
-                    </div>
-                </div>
-                <form id="schedule" name="scheduleform" class="img-shadow appointment-wrapper">
-                    <div class="formpwrap">
-                        <!-- First -->
-                        <div class="input rvl">
-                            <input type="text" name="firstname" placeholder="First Name" class="form-control" required />
-                        </div>
-
-                        <!-- Last -->
-                        <div class="input rvl">
-                            <input type="text" name="lastname" placeholder="Last Name" class="form-control" required />
-                        </div>
-
-                        <!-- Email -->
-                        <div class="input rvl">
-                            <input type="text" placeholder="Email" name="email" class="form-control" />
-                        </div>
-
-                        <!-- Phone -->
-                        <div class="input rvl">
-                            <input type="text" placeholder="Phone Number" name="phone" class="form-control" />
-                        </div>
-
-                        <!-- Preferred Time -->
-                        <div class="input rvl">
-                            <select name="preferred_time" class="form-control" required>
-                                <option value="" disabled selected>Treatment (Optional)</option>
-                                <option value="Early Morning">Early Morning</option>
-                                <option value="Late Morning">Late Morning</option>
-                                <option value="Early Afternoon">Early Afternoon</option>
-                                <option value="Late Afternoon">Late Afternoon</option>
-                            </select>
-                        </div>
-
-                        <!-- Preferred Day -->
-                        <div class="input rvl">
-                            <select name="preferred_day" class="form-control" required>
-                                <option value="" disabled selected>Date/Time (Optional)</option>
-                                <option value="Monday">Monday</option>
-                                <option value="Tuesday">Tuesday</option>
-                                <option value="Wednesday">Wednesday</option>
-                                <option value="Thursday">Thursday</option>
-                                <option value="Friday">Friday</option>
-                                <option value="Saturday">Saturday</option>
-                            </select>
-                        </div>
-
-                        <!-- Submit Button -->
-                        <div class="f-submit rvl">
-                            <button type="submit" class="ui-btn ui-submit">
-                                REQUEST APPOINTMENT
-                            </button>
-                        </div>
-
-                    </div>
-                </form>
-
-                <div id="form-results"></div>
-            </div>
-
-        </div>
-    </section>
 
     <!-- FOOTER CONTENT -->
 
