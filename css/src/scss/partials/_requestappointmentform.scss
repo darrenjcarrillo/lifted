@@ -9,8 +9,6 @@
   text-align: left;
 
   box-shadow: none;
-
-  border-radius: 0;
   font-size: 14px;
   letter-spacing: 1px;
   height: auto;
@@ -26,10 +24,10 @@
 
 
   font-size: 16px;
-  color: #4d90ff;
+  color: $color-secondary;
   letter-spacing: 0em;
 
-
+  border-radius: 30px;
 }
 
 @mixin placeholderText {
@@ -43,7 +41,7 @@
 
   font-weight: Regular;
   font-size: 16px;
-  color: #4d90ff;
+  color: $color-secondary;
   letter-spacing: 0em;
   line-height: 1.875;
 
@@ -58,9 +56,8 @@ input.form-control {
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 3px 11px 7px rgba(0, 0, 0, 0.11);
     color: #515252;
-    border-radius: 3px;
+    border-radius: 30px;
 
     &::placeholder {
       color: #515252;
@@ -70,9 +67,12 @@ input.form-control {
 
 select.form-control {
   background: transparent
-    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23000000' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
-    no-repeat right 0.75rem center/8px 10px;
+    url("../../../../img/arrow-blue.svg")
+    no-repeat right 1.5rem center/20px 20px;
   @include selectStyles;
+
+
+
   text-transform: capitalize;
   option {
     text-transform: capitalize;
@@ -82,11 +82,13 @@ select.form-control {
     @include placeholderText;
   }
 
+
+  border-radius: 30px;
+
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 3px 11px 7px rgba(0, 0, 0, 0.11);
     color: #515252;
-    border-radius: 3px;
+    border-radius: 30px;
     &::placeholder {
       color: #515252;
     }

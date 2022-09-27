@@ -760,81 +760,94 @@
             </picture>
           </div>
           <div class="container">
-
-
-
-              <div class="formcontent">
-                  <div class="content">
-                    <div class="rvl">
-                      <h3>CALL + CONNECT</h3>
-                    </div>
-                      <div class="rvl">
-                          <h2 class="sec-title">Request Appointment</h2>
-                      </div>
-                      <div class="rvl">
-                          <p>
-                            Our Lifted Beauty + Wellness team is here to maximize your glow and give you the vibrant look you deserve. Fill out the form below or give us a call at  <a href="tel:206-299-1102">(206) 299-1102</a> to schedule your visit today.
-                          </p>
-                      </div>
+            <div class="formcontent">
+                <div class="content">
+                  <div class="rvl">
+                    <h3>CALL + CONNECT</h3>
                   </div>
-                  <form id="schedule" name="scheduleform" class="img-shadow appointment-wrapper">
-                      <div class="formpwrap">
-                          <!-- First -->
-                          <div class="input rvl">
-                              <input type="text" name="firstname" placeholder="First Name" class="form-control" required />
-                          </div>
+                    <div class="rvl">
+                        <h2 class="sec-title">Request Appointment</h2>
+                    </div>
+                    <div class="rvl">
+                        <p>
+                          Our Lifted Beauty + Wellness team is here to maximize your glow and give you the vibrant look you deserve. Fill out the form below or give us a call at  <a href="tel:206-299-1102">(206) 299-1102</a> to schedule your visit today.
+                        </p>
+                    </div>
+                </div>
+                <form id="schedule" name="scheduleform" class="img-shadow appointment-wrapper">
+                    <div class="formpwrap">
+                        <!-- First -->
+                        <div class="input rvl">
+                            <input type="text" name="fullname" placeholder="Full Name" class="form-control" required />
+                        </div>
 
-                          <!-- Last -->
-                          <div class="input rvl">
-                              <input type="text" name="lastname" placeholder="Last Name" class="form-control" required />
-                          </div>
+                        <!-- Preferred Day -->
+                        <div class="input rvl">
+                          <select name="preferred_day" class="form-control" required>
+                              <option value="" disabled selected>Preferred Date</option>
+                              <option value="Monday">Monday</option>
+                              <option value="Tuesday">Tuesday</option>
+                              <option value="Wednesday">Wednesday</option>
+                              <option value="Thursday">Thursday</option>
+                              <option value="Friday">Friday</option>
+                              <option value="Saturday">Saturday</option>
+                          </select>
+                        </div>
 
-                          <!-- Email -->
-                          <div class="input rvl">
-                              <input type="text" placeholder="Email" name="email" class="form-control" />
-                          </div>
+                        <!-- Phone -->
+                        <div class="input rvl">
+                          <input type="text" placeholder="Phone Number" name="phone" class="form-control" />
+                        </div>
 
-                          <!-- Phone -->
-                          <div class="input rvl">
-                              <input type="text" placeholder="Phone Number" name="phone" class="form-control" />
-                          </div>
+                        <!-- Preferred Time -->
+                        <div class="input rvl">
+                          <select name="preferred_time" class="form-control" required>
+                              <option value="" disabled selected>Preferred Time</option>
+                              <option value="Early Morning">Early Morning</option>
+                              <option value="Late Morning">Late Morning</option>
+                              <option value="Early Afternoon">Early Afternoon</option>
+                              <option value="Late Afternoon">Late Afternoon</option>
+                          </select>
+                        </div>
+                      
 
-                          <!-- Preferred Time -->
-                          <div class="input rvl">
-                              <select name="preferred_time" class="form-control" required>
-                                  <option value="" disabled selected>Treatment (Optional)</option>
-                                  <option value="Early Morning">Early Morning</option>
-                                  <option value="Late Morning">Late Morning</option>
-                                  <option value="Early Afternoon">Early Afternoon</option>
-                                  <option value="Late Afternoon">Late Afternoon</option>
-                              </select>
-                          </div>
+                        <!-- Email -->
+                        <div class="input rvl">
+                            <input type="text" placeholder="Email" name="email" class="form-control" />
+                        </div>
 
-                          <!-- Preferred Day -->
-                          <div class="input rvl">
-                              <select name="preferred_day" class="form-control" required>
-                                  <option value="" disabled selected>Date/Time (Optional)</option>
-                                  <option value="Monday">Monday</option>
-                                  <option value="Tuesday">Tuesday</option>
-                                  <option value="Wednesday">Wednesday</option>
-                                  <option value="Thursday">Thursday</option>
-                                  <option value="Friday">Friday</option>
-                                  <option value="Saturday">Saturday</option>
-                              </select>
-                          </div>
+                        <!-- Preferred Day -->
+                        <div class="input rvl">
+                          <select name="treatments" class="form-control" required>
+                              <option value="" disabled selected>Treatment (Optional)</option>
+                              <option value="Monday">Monday</option>
+                              <option value="Tuesday">Tuesday</option>
+                              <option value="Wednesday">Wednesday</option>
+                              <option value="Thursday">Thursday</option>
+                              <option value="Friday">Friday</option>
+                              <option value="Saturday">Saturday</option>
+                          </select>
+                        </div>
+                        
 
-                          <!-- Submit Button -->
-                          <div class="f-submit rvl">
-                              <button type="submit" class="ui-btn ui-submit">
-                                  REQUEST APPOINTMENT
-                              </button>
-                          </div>
 
-                      </div>
-                  </form>
 
-                  <div id="form-results"></div>
-              </div>
+
+
+
+                    </div>
+
+                    
+                  <!-- Submit Button -->
+                  <div class="f-submit rvl">
+                    <button type="submit" class="ui-btn ui-submit">
+                        Submit
+                    </button>
+                  </div>
+                </form>
+
+                <div id="form-results"></div>
+            </div>
 
           </div>
         </section>
@@ -973,56 +986,40 @@
           </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <section class="textblock">
-            <div class="container">
-                <div class="content">
-                    <div class="rvl">
-                        <div class="subtitle">
-                            MEDICAL DERMATOLOGY
-                        </div>
-                    </div>
-                    <div class="rvl">
-                        <h2 class="sec-title">
-                            Reliable Family, Surgical & Aesthetic Dermatological Care
-                        </h2>
-                    </div>
-                    <div class="rvl">
-                        <p>If you have a medical issue like <a href="" class="alink">moles</a>, <a href=""
-                            class="alink">warts</a>, or <a href="" class="alink">psoriasis</a>, you want your skin in
-                        the care of an expert. Dr. Brezel is a board-certified dermatologic surgeon with over 25 years
-                        of experience in medical, surgical, and aesthetic dermatology. Your skin could not be in better
-                        hands.</p>
-                    </div>
-                    <div class="rvl">
-                        <div class="btn-container">
-                            <a href="" class="ui-btn">
-                                BETTER SKIN STARTS HERE
-                            </a>
-                        </div>
-                    </div>
+        
+        <section class="social">
+          <div class="img">
+            <picture class="">
+              <source media="(min-width: 576px)" srcset="img/social-bg@2x.jpg">
+              <img src="img/social-bg@2x.jpg" alt="" class="pic"> 
+            </picture>
+          </div>
+          <div class="container">
+              <div class="content">
+                <div class="rvl">
+                  <h2>
+                    Follow Us on instagram
+                  </h2>
                 </div>
-            </div>
+                <div class="rvl">
+                  <div class="img-wrapper">
+                    <img src="img/instagram@2x.jpg" alt="Instagram content">
+                  </div>
+                </div>
+
+                <div class="btn-container rvl">
+                  <a href="#schedulewithus" class="ui-btn">
+                      <span>Follow on instagram</span>  
+                      <div class="icon">
+                        <img src="img/arrow.svg" alt="arrow">
+                      </div>  
+                  </a>
+                </div>
+              </div>
+
+          </div>
         </section>
-
-
-
-
-       
-
+  
 
     </main>
 
