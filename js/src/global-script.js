@@ -325,3 +325,17 @@ var swiper = new Swiper(".mySwiper2", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+var swiper = new Swiper(".mySwiper3", {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  loop: true,
+  breakpoints: {
+    992: {
+      slidesPerView: 4,
+    },
+  },
+});
