@@ -323,6 +323,64 @@
 				}
 			}
 
+			.mobile-content {
+				display: flex;
+
+				@include isXLarge {
+					display: none;
+				}
+
+				.block {	
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+
+					.logo-mobile {
+						width: 200px;
+						margin: 20px 0;
+		
+	
+						picture {
+							img {
+								width: 100%;
+								height: 100%;
+							}
+						}
+					}
+
+					.location, .phone {
+						display: flex;
+						justify-content: center;
+						a {
+							text-align: center;
+							text-decoration: none;
+							color: $b;
+							&:hover {
+								opacity: 0.5;
+							}
+						}
+					}
+
+
+					.socialcontent {
+						a {
+							margin: 0 10px;
+
+
+							&:hover {
+								opacity: 0.5;
+							}
+							&::before {
+								display: none;
+							}
+						}
+					}
+				}
+
+
+			}
+
 			// First level
 			ul.items {
 				display: flex;
