@@ -205,8 +205,12 @@ h6 {
 h1 {
   font-size: $header-size;
   margin-bottom: $header-margin;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
+
+  @include isSmall {
+    font-size: 45px;
+  }
 
   @include isLarge {
     font-size: 65px;
@@ -225,8 +229,12 @@ h1 {
 h2 {
   font-size: $header-size / 1.3;
   margin-bottom: $header-margin / 1.3;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
+
+  @include isSmall {
+    font-size: 45px;
+  }
 
   @include isLarge {
     font-size: 65px;
