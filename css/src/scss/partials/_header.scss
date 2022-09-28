@@ -326,7 +326,7 @@
 			.mobile-content {
 				display: flex;
 
-				@include isXLarge {
+				@include isLarge {
 					display: none;
 				}
 
@@ -352,6 +352,7 @@
 					.location, .phone {
 						display: flex;
 						justify-content: center;
+
 						a {
 							text-align: center;
 							text-decoration: none;

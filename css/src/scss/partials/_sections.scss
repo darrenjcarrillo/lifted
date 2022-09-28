@@ -98,6 +98,11 @@ section.welcome {
     z-index: 2;
     display: flex;
     flex-direction: column;
+    display: none;
+
+    @include isMedium {
+      display: flex;
+    }
 
     .social-link {
       margin: 15px 0;
@@ -129,9 +134,9 @@ section.sculptsure {
     z-index: 2;
     display: flex;
 
-    @media screen and (max-width: 992px) {
-      padding: 50px 15px 0;
-    }
+    // @media screen and (max-width: 992px) {
+    //   padding: 50px 15px 0;
+    // }
 
 
     .content {
@@ -139,17 +144,24 @@ section.sculptsure {
       display: flex;
       align-items: flex-start;
 
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 1050px) {
         flex-direction: column-reverse;
       }
 
       .left-col {
         width: 50%;
-
-
         
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1050px) {
           width: 100%;
+
+
+          picture {
+
+            img {
+              margin: 0 auto;
+            }
+          }
+
         }
 
         .img {
@@ -172,6 +184,13 @@ section.sculptsure {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media screen and (max-width: 1050px) {
+          width: 100%;
+          margin-bottom: 50px;
+        }
+
+
         
 
         .right-content {
@@ -179,6 +198,10 @@ section.sculptsure {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+
+          @media screen and (max-width: 1050px) {
+            margin-bottom: 40px;
+          }
 
   
 
@@ -203,6 +226,15 @@ section.sculptsure {
           z-index: -1;
 
 
+          
+          @media screen and (max-width: 1050px) {
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            right: 0;
+          }
+
+
           .image-wrapper {
             position: relative;
             top: -10px;
@@ -223,6 +255,15 @@ section.sculptsure {
             @include isRetina {
               right: 200px;
             }
+
+            @media screen and (max-width: 1050px) {
+              position: relative;
+              bottom: 30px;
+              right: 0;
+              display: flex;
+              align-items: flex-end;
+            }
+    
             img {
               max-width: 25px;
             }
