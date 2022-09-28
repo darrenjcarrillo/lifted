@@ -1160,7 +1160,10 @@ section.form {
   align-items: center;
   justify-content: center;
   padding: 50px 0;
-  // min-height: 900px;
+
+  @include isLarge {
+    min-height: 900px;
+  }
 
   @include isXLarge {
     padding: 80px 0;
@@ -1183,15 +1186,33 @@ section.form {
       width: 100%;
       height: 100%;
 
+      @media screen and (max-width: 1100px) {
+          
+        // opacity: 0.2;
+        &:after {
+          content: close-quote;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background: $color-main;
+          // background: -o-linear-gradient(top,hsla(0,0%,100%,0) 25%,#212529 85%);
+          // background: -webkit-gradient(linear,left top,left bottom,color-stop(25%,hsla(0,0%,100%,0)),color-stop(85%,#212529));
+          // background: linear-gradient(180deg,hsla(0,0%,100%,0) 25%,#212529 85%);
+          opacity: .9;
+          height: 100%;
+        }
+
+
+      }
+
 
       img {
         object-fit: cover;
         object-position: right;
         height: 100%;
         width: 100%;
-        @media screen and (max-width: 1100px) {
-          opacity: 0.3;
-        }
+
         // @media screen and (max-width: 992px) {
         //   opacity: 0.3;
         // }
@@ -1204,23 +1225,31 @@ section.form {
 
 
     .formcontent {
-      width: 70%;
+      width: 100%;
+
+      @include isLarge {
+        width: 70%;
+      }
 
       .content {
         margin-bottom: 50px;
 
         h2 {
-          font-size: 45px;
+          font-size: 40px;
           text-transform: uppercase;
           margin-bottom: 50px;
 
           @include isLarge {
-            font-size: 50px;
+            font-size: 45px;
           }
         }
 
         p {
-          width: 70%;
+          width: 100%;
+
+          @include isLarge {
+            width: 70%;
+          }
 
           a {
             color: $b;
@@ -1236,11 +1265,21 @@ section.form {
       .formpwrap {
         display: flex;
         gap: 30px;
-        flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
+
+        @include isLarge {
+          display: flex;
+          gap: 30px;
+          flex-wrap: wrap;
+          flex-direction: row;
+        }
     
         .input {
-          width: 40%;
+          width: 100%;
+
+          @include isMedium {
+            width: 40%;
+          }
         }
       }
 
@@ -1250,7 +1289,7 @@ section.form {
         margin-bottom: 10px;
         padding: 15px 12px;
         color: $f;
-        width: 25%;
+        width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1260,6 +1299,10 @@ section.form {
 
         &:hover {
           opacity: 0.5;
+        }
+
+        @include isLarge {
+          width: 25%;
         }
       }
 
@@ -1296,14 +1339,23 @@ section.article {
       display: flex;
       justify-content: space-between;
       width: 100%;
+      flex-direction: column-reverse;
+
+      @include isLarge {
+        flex-direction: row;
+      }
 
 
       .col-item {
-        width: 48%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
+
+        @include isLarge {
+          width: 48%;
+        }
 
 
         .img-wrapper {
@@ -1388,6 +1440,11 @@ section.article {
 
         &:nth-child(2) {
            justify-content: space-between;
+            margin-bottom: 50px;
+
+           @include isLarge {
+            margin-bottom: 0;
+           }
 
           .col-content {
             display: flex;
@@ -1399,7 +1456,11 @@ section.article {
             }
 
             .img-wrap {
-              width: 25%;
+              width: 10%;
+
+              @include isSmall {
+                width: 25%;
+              }
 
               @include isXLarge {
                 width: 30%;
@@ -1535,24 +1596,60 @@ section.testimonials {
       .col-container {
         display: flex;
         justify-content: space-between;
-        margin: 50px 0;
+        flex-direction: column;
+        align-items: center;
+
+        @include isLarge {
+          flex-direction: row;
+          margin: 50px 0;
+        }
         
 
         .item-col {
-          width: 30%;
+          width: 90%;
+
+          @include isLarge {
+           width: 30%;
+           margin-bottom: 0;
+
+
+          }
+
+          &:nth-child(3) {
+            margin-bottom: 50px;
+
+            @include isLarge {
+              margin-bottom: 0;
+            }
+          }
+
+
 
             .icon-wrapper-qoute {
-              position: absolute;
+              position: relative;
               z-index: 1;
               top: bottom;
-              top: 145px;
-              margin-left: -15px;
+              top: 30px;
+              margin-left: -10px;
 
               width: 55px;
               height: 55px;
 
+              @include isLarge {
+                position: absolute;
+                z-index: 1;
+                top: bottom;
+                top: 145px;
+                margin-left: -15px;
+  
+                width: 55px;
+                height: 55px;
+  
+              }
+
 
               @include isXLarge {
+                
                 width: 74px;
                 height: 74px;
               }
@@ -1598,6 +1695,8 @@ section.testimonials {
             }
 
           }
+
+
         }
         
       }
