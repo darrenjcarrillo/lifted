@@ -74,6 +74,23 @@
   &.ui-btn-white {
     color: $f;
 
+    div.icon {
+      background: $f;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      border-radius: 50%;
+      transition: 0.3s;
+  
+      img {
+        width: 30px;
+        height: 30px;
+      }
+  
+    }
+
   }
 
   &.ui-btn-small {
