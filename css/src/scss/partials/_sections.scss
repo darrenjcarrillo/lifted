@@ -219,7 +219,7 @@ section.sculptsure {
           width: 55%;
           position: absolute;
           right: 2%;
-          padding: 20px;
+          padding: 0 20px 0px 20px;
           background: $color-third;
           bottom: 40px;
           display: flex;
@@ -237,24 +237,31 @@ section.sculptsure {
 
           .image-wrapper {
             position: relative;
-            top: -10px;
+            top: 25px;
             z-index: 1;
+            right: 75px;
+
             img {
               max-width: 50px;
-              margin: 0 10px;
+              margin: 0 20px;
+
             }
           }
 
           .image-wrapper-right {
-            position: absolute;
+            position: relative;
             z-index: 1;
-            bottom: 60px;
-            right: 100px;
+            // bottom: -60px;
+            // right: 75px;
+            display: flex;
+            justify-content: flex-end;
+            right: 50px;
 
 
-            @include isRetina {
-              right: 200px;
-            }
+            // @include isRetina {
+            //   right: 200px;
+            //   bottom: -114px;
+            // }
 
             @media screen and (max-width: 1050px) {
               position: relative;
@@ -273,6 +280,9 @@ section.sculptsure {
           .text-content {
             p {
               margin: 0;
+              position: relative;
+              top: -20px;
+              padding: 0 0px 0 70px;
               // z-index: 99;
               // display: flex;
          
