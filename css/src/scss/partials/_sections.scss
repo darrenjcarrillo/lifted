@@ -7,7 +7,8 @@ section.welcome {
   min-height: 950px;
   display: flex;
   align-items: center;
-
+  overflow: hidden;
+  
 
   .img {
     position: absolute;
@@ -36,7 +37,42 @@ section.welcome {
         // @media screen and (max-width: 992px) {
         //   opacity: 0.3;
         // }
+        
+
+        animation-name: kenburns;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 65s;
+        opacity: 1;
+        transform: scale(1.2);
       }
+
+      @keyframes kenburns {
+        0% {
+          opacity: 1;
+          transform: scale(1);
+        }
+    
+        5% {
+          opacity: 1;
+        }
+    
+        23% {
+          opacity: 1;
+        }
+    
+    
+        26% {
+          opacity: 1;
+          transform: scale(1.2);
+        }
+    
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+   
     }
 
 
@@ -134,10 +170,6 @@ section.sculptsure {
     z-index: 2;
     display: flex;
 
-    // @media screen and (max-width: 992px) {
-    //   padding: 50px 15px 0;
-    // }
-
 
     .content {
       width: 100%;
@@ -191,27 +223,26 @@ section.sculptsure {
         }
 
 
-        
-
         .right-content {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          margin-top: 50px;
+
+          @media screen and (max-width: 1150px) {
+            margin-top: 0;
+          }
 
           @media screen and (max-width: 1050px) {
             margin-bottom: 40px;
           }
-
-  
 
           p {
             text-align: center;
             
           
           }
-
-
         }
 
           
@@ -251,18 +282,12 @@ section.sculptsure {
           .image-wrapper-right {
             position: relative;
             z-index: 1;
-            // bottom: -60px;
-            // right: 75px;
             display: flex;
             justify-content: flex-end;
             right: 50px;
 
 
-            // @include isRetina {
-            //   right: 200px;
-            //   bottom: -114px;
-            // }
-
+    
             @media screen and (max-width: 1050px) {
               position: relative;
               bottom: 30px;
@@ -283,16 +308,6 @@ section.sculptsure {
               position: relative;
               top: -20px;
               padding: 0 0px 0 70px;
-              // z-index: 99;
-              // display: flex;
-         
-              // span {
-              //   position: relative;
-              //   // right: 200px;
-              //   // bottom: 20px;
-                
-               
-              // }
             }
   
             
@@ -340,7 +355,6 @@ section.business {
     right: 0;
     bottom: 0;
     display: flex;
-    // max-width: 1400px;
     margin: 0 auto;
 
     align-items: center;
@@ -430,7 +444,6 @@ section.team {
     right: 0;
     bottom: 0;
     display: flex;
-    // max-width: 1400px;
     margin: 0 auto;
 
     align-items: center;
@@ -460,7 +473,6 @@ section.team {
     position: relative;
     z-index: 1;
     display: flex;
-    // margin: 0;
     padding: 0;
     max-width: 100%;
     align-items: center;
@@ -575,13 +587,6 @@ section.team {
             }
 
             &:after {
-              // font-size: 25px;
-              // width: 100%;
-              // height: 100%;
-              // display: flex;
-              // align-items: center;
-              // justify-content: center;
-              // margin-left: 5px;
               display: none;
             }
 
@@ -959,7 +964,6 @@ section.skincare {
     right: 0;
     bottom: 0;
     display: flex;
-    // max-width: 1400px;
     margin: 0 auto;
 
     align-items: center;
@@ -989,7 +993,6 @@ section.skincare {
     position: relative;
     z-index: 1;
     display: flex;
-    // margin: 0;
     padding: 0;
     max-width: 100%;
     align-items: center;
@@ -1025,8 +1028,6 @@ section.skincare {
           }
 
 
-
-
           .swiper-wrapper {
             width: 100%;
           }
@@ -1037,10 +1038,6 @@ section.skincare {
             display: flex;
             flex-direction: column;
             align-items: center;
-            // margin: 0 25px;
-
-
-
 
 
             .img-container {
@@ -1085,7 +1082,6 @@ section.skincare {
               width: 100%;
               display: flex;
               justify-content: center;
-              // padding-right: 20px;
               padding: 0 25px;
 
               &.number {
@@ -1128,13 +1124,6 @@ section.skincare {
             }
 
             &:after {
-              // font-size: 25px;
-              // width: 100%;
-              // height: 100%;
-              // display: flex;
-              // align-items: center;
-              // justify-content: center;
-              // margin-left: 5px;
               display: none;
             }
 
@@ -1198,7 +1187,6 @@ section.form {
 
       @media screen and (max-width: 1100px) {
           
-        // opacity: 0.2;
         &:after {
           content: close-quote;
           position: absolute;
@@ -1206,9 +1194,6 @@ section.form {
           left: 0;
           width: 100%;
           background: $color-main;
-          // background: -o-linear-gradient(top,hsla(0,0%,100%,0) 25%,#212529 85%);
-          // background: -webkit-gradient(linear,left top,left bottom,color-stop(25%,hsla(0,0%,100%,0)),color-stop(85%,#212529));
-          // background: linear-gradient(180deg,hsla(0,0%,100%,0) 25%,#212529 85%);
           opacity: .9;
           height: 100%;
         }
@@ -1317,8 +1302,6 @@ section.form {
       }
 
     }
-  
-
 
   }
 
@@ -1380,11 +1363,9 @@ section.article {
               top: 0;
               left: 0;
               width: 100%;
-              background: #fff;
-              background: -webkit-gradient(linear,left top,left bottom,color-stop(25%,hsla(0,0%,100%,0)),color-stop(85%,#212529));
-              background: -o-linear-gradient(top,hsla(0,0%,100%,0) 25%,#212529 85%);
-              background: linear-gradient(180deg,hsla(0,0%,100%,0) 25%,#212529 85%);
-              opacity: .9;
+              background: rgb(0,0,0);
+              background: linear-gradient(0deg, rgba(0,0,0,0.8491771708683473) 0%, rgba(0,0,0,0) 70%);
+              // opacity: .9;
               height: 100%;
               border-radius: 50px;
             }
@@ -1495,7 +1476,6 @@ section.article {
 
             .text-wrap {
               width: 80%;
-              // padding: 0;
 
               @include isSmall {
                 width: 70%;
@@ -1647,7 +1627,7 @@ section.testimonials {
             .icon-wrapper-qoute {
               position: relative;
               z-index: 1;
-              top: bottom;
+              // top: bottom;
               top: 30px;
               margin-left: -10px;
 
@@ -1658,7 +1638,7 @@ section.testimonials {
                 position: absolute;
                 z-index: 1;
                 top: bottom;
-                top: 145px;
+                top: -27px;
                 margin-left: -15px;
   
                 width: 55px;
@@ -1668,7 +1648,7 @@ section.testimonials {
 
 
               @include isXLarge {
-                
+                top: -40px;
                 width: 74px;
                 height: 74px;
               }

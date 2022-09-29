@@ -258,7 +258,7 @@ h3 {
   text-transform: uppercase;
 
   @include isXLarge {
-    font-size: 25px;
+    font-size: 20px;
   }
   
   @include isRetina {
