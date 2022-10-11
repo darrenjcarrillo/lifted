@@ -74,16 +74,7 @@
           }
         }
 
-       .social {
-        display: flex;
 
-        a {
-          margin: 0 10px;
-          font-size: 15px;
-          line-height: 1.8;
-          font-weight: 500;
-        }
-       }
       }
     }
 
@@ -167,6 +158,21 @@
                 opacity: 0.5;
               }
             }
+
+            .social {
+              display: flex;
+      
+              a {
+                margin: 0 20px 0 0;
+                font-size: 15px;
+                line-height: 1.8;
+                font-weight: 500;
+
+                &:hover {
+                  opacity: 0.5;
+                }
+              }
+             }
   
             
           }
